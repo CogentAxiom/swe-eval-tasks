@@ -1,0 +1,11 @@
+{
+  "as_of": "2026-10-31",
+  "revolving_commitments": 25000000.0,
+  "revolving_loans": 1000000.0,
+  "letters_of_credit": 0.0,
+  "nolv_percentage": 0.7,
+  "agent_reserves": {
+    "rent": 100000.0
+  },
+  "dilution_ratio": 0.05
+}

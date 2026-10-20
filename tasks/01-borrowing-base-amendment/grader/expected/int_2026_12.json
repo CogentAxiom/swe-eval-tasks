@@ -1,0 +1,44 @@
+{
+  "profile": "all",
+  "group": "integrated",
+  "certificate": {
+    "as_of": "2026-12-31",
+    "gross_accounts": "14180452.24",
+    "ineligible_accounts": {
+      "affiliate": "211699.08",
+      "foreign": "237516.30",
+      "special_terms": "61000.00",
+      "past_due": "349441.93",
+      "cross_age": "60000.00",
+      "contra": "0.00",
+      "concentration": "406900.86"
+    },
+    "total_ineligible_accounts": "1326558.17",
+    "eligible_accounts": "12853894.07",
+    "accounts_availability": "10925809.96",
+    "gross_inventory": "5695853.39",
+    "ineligible_inventory": {
+      "wip": "182400.00",
+      "in_transit": "241750.00",
+      "third_party_no_caa": "96310.00"
+    },
+    "eligible_inventory": "5175393.39",
+    "inventory_availability": "2846466.36",
+    "reserves": {
+      "customs_duties": "42000.00",
+      "rent": "185000.00",
+      "dilution": "143963.61"
+    },
+    "total_reserves": "370963.61",
+    "borrowing_base": "13401312.71",
+    "revolving_commitments": "25000000.00",
+    "revolving_exposure": "11650000.00",
+    "availability": "1751312.71",
+    "aging": {
+      "0-30": "10120853.63",
+      "31-60": "2848497.61",
+      "61-90": "933084.78",
+      "91+": "278016.22"
+    }
+  }
+}

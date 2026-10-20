@@ -1,0 +1,23 @@
+{
+ "conversations": [
+  "t1-fable",
+  "t1-haiku",
+  "t1-opus",
+  "t1-sonnet",
+  "t1v2-fable",
+  "t1v2-haiku",
+  "t1v2-opus",
+  "t1v2-sonnet",
+  "t2-fable",
+  "t2-haiku",
+  "t2-opus",
+  "t2-sonnet",
+  "t2v2-fable",
+  "t2v2-haiku",
+  "t2v2-opus",
+  "t2v2-sonnet",
+  "t2v3-haiku",
+  "t2v3-opus",
+  "t2v3-sonnet"
+ ]
+}

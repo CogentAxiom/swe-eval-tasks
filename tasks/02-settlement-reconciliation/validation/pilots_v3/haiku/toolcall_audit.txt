@@ -1,0 +1,1 @@
+haiku: 55 tool calls {'Bash': 30, 'Read': 9, 'mcp__ccd_turn__update_plan': 1, 'Write': 8, 'Edit': 6, 'SubagentHandback': 1}; flagged 0

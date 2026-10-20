@@ -1,0 +1,2 @@
+constraint_id,monitored_element,contingency,import_region,shadow_price,binding_probability
+METRO_IMPORT,North-Metro 345 kV,Loss of South-Metro 345 kV double circuit,METRO,12.00,0.55

@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="320" viewBox="0 0 760 320" role="img" aria-label="Audit corpus (2026-09-24 build): reply carrying the first entry, affected conversations">
+
+<style>
+  svg { --surface:#fcfcfb; --ink:#0b0b0b; --ink2:#52514e; --muted:#898781; --grid:#e1e0d9; --axis:#c3c2b7;
+        --s1:#2a78d6; --o1:#86b6ef; --o2:#2a78d6; --o3:#104281; --ref:#c3c2b7; }
+  @media (prefers-color-scheme: dark) {
+    svg { --surface:#1a1a19; --ink:#f0efec; --ink2:#c3c2b7; --muted:#898781; --grid:#2c2c2a; --axis:#383835;
+          --s1:#3987e5; --o1:#184f95; --o2:#3987e5; --o3:#b7d3f6; --ref:#383835; }
+  }
+  .t { font: 600 15px system-ui, -apple-system, 'Segoe UI', sans-serif; fill: var(--ink); }
+  .st { font: 12px system-ui, -apple-system, 'Segoe UI', sans-serif; fill: var(--ink2); }
+  .lab { font: 12px system-ui, -apple-system, 'Segoe UI', sans-serif; fill: var(--ink2); }
+  .val { font: 12px system-ui, -apple-system, 'Segoe UI', sans-serif; fill: var(--ink); font-variant-numeric: tabular-nums; }
+  .ax { font: 11px system-ui, -apple-system, 'Segoe UI', sans-serif; fill: var(--muted); font-variant-numeric: tabular-nums; }
+</style>
+<title>Audit corpus (2026-09-24 build): reply carrying the first entry, affected conversations</title>
+<rect width="760" height="320" fill="var(--surface)"/>
+<text class="t" x="16" y="26">Audit corpus (2026-09-24 build): reply carrying the first entry, affected conversations</text>
+<text class="st" x="16" y="45">43.1% at the first reply, 72.5% within the first three</text>
+<line x1="56" y1="264.0" x2="736" y2="264.0" stroke="var(--grid)" stroke-width="1"/>
+<text class="ax" x="50" y="268.0" text-anchor="end">0</text>
+<line x1="56" y1="214.0" x2="736" y2="214.0" stroke="var(--grid)" stroke-width="1"/>
+<text class="ax" x="50" y="218.0" text-anchor="end">25</text>
+<line x1="56" y1="164.0" x2="736" y2="164.0" stroke="var(--grid)" stroke-width="1"/>
+<text class="ax" x="50" y="168.0" text-anchor="end">50</text>
+<line x1="56" y1="114.0" x2="736" y2="114.0" stroke="var(--grid)" stroke-width="1"/>
+<text class="ax" x="50" y="118.0" text-anchor="end">75</text>
+<line x1="56" y1="64.0" x2="736" y2="64.0" stroke="var(--grid)" stroke-width="1"/>
+<text class="ax" x="50" y="68.0" text-anchor="end">100</text>
+<path d="M100.7,264.0 V136.0 Q100.7,132.0 104.7,132.0 H120.7 Q124.7,132.0 124.7,136.0 V264.0 Z" fill="var(--s1)"><title>1st: 66</title></path>
+<text class="val" x="112.7" y="126.0" text-anchor="middle">66</text>
+<text class="ax" x="112.7" y="280.0" text-anchor="middle">1st</text>
+<path d="M214.0,264.0 V212.0 Q214.0,208.0 218.0,208.0 H234.0 Q238.0,208.0 238.0,212.0 V264.0 Z" fill="var(--s1)"><title>2nd: 28</title></path>
+<text class="val" x="226.0" y="202.0" text-anchor="middle">28</text>
+<text class="ax" x="226.0" y="280.0" text-anchor="middle">2nd</text>
+<path d="M327.3,264.0 V234.0 Q327.3,230.0 331.3,230.0 H347.3 Q351.3,230.0 351.3,234.0 V264.0 Z" fill="var(--s1)"><title>3rd: 17</title></path>
+<text class="val" x="339.3" y="224.0" text-anchor="middle">17</text>
+<text class="ax" x="339.3" y="280.0" text-anchor="middle">3rd</text>
+<path d="M440.7,264.0 V234.0 Q440.7,230.0 444.7,230.0 H460.7 Q464.7,230.0 464.7,234.0 V264.0 Z" fill="var(--s1)"><title>4th-5th: 17</title></path>
+<text class="val" x="452.7" y="224.0" text-anchor="middle">17</text>
+<text class="ax" x="452.7" y="280.0" text-anchor="middle">4th-5th</text>
+<path d="M554.0,264.0 V236.0 Q554.0,232.0 558.0,232.0 H574.0 Q578.0,232.0 578.0,236.0 V264.0 Z" fill="var(--s1)"><title>6th-10th: 16</title></path>
+<text class="val" x="566.0" y="226.0" text-anchor="middle">16</text>
+<text class="ax" x="566.0" y="280.0" text-anchor="middle">6th-10th</text>
+<path d="M667.3,264.0 V250.0 Q667.3,246.0 671.3,246.0 H687.3 Q691.3,246.0 691.3,250.0 V264.0 Z" fill="var(--s1)"><title>11th+: 9</title></path>
+<text class="val" x="679.3" y="240.0" text-anchor="middle">9</text>
+<text class="ax" x="679.3" y="280.0" text-anchor="middle">11th+</text>
+<line x1="56" y1="264" x2="736" y2="264" stroke="var(--axis)" stroke-width="1"/>
+</svg>

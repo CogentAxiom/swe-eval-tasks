@@ -1,0 +1,26 @@
+{
+  "2027-11-07": {
+    "settle": {
+      "LZ_METRO": "51000.07",
+      "PGO_HUB_NORTH": "21992.77",
+      "PGO_HUB_SOUTH": "52898.87"
+    },
+    "recon": {
+      "LZ_METRO": {
+        "shadow": "51000.07",
+        "statement": "51000.07",
+        "diff": "0.00"
+      },
+      "PGO_HUB_NORTH": {
+        "shadow": "21992.77",
+        "statement": "21992.77",
+        "diff": "0.00"
+      },
+      "PGO_HUB_SOUTH": {
+        "shadow": "52898.87",
+        "statement": "52898.87",
+        "diff": "0.00"
+      }
+    }
+  }
+}

@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="244" viewBox="0 0 760 244" role="img" aria-label="Audit corpus (2026-09-24 build): entries by driver">
+
+<style>
+  svg { --surface:#fcfcfb; --ink:#0b0b0b; --ink2:#52514e; --muted:#898781; --grid:#e1e0d9; --axis:#c3c2b7;
+        --s1:#2a78d6; --o1:#86b6ef; --o2:#2a78d6; --o3:#104281; --ref:#c3c2b7; }
+  @media (prefers-color-scheme: dark) {
+    svg { --surface:#1a1a19; --ink:#f0efec; --ink2:#c3c2b7; --muted:#898781; --grid:#2c2c2a; --axis:#383835;
+          --s1:#3987e5; --o1:#184f95; --o2:#3987e5; --o3:#b7d3f6; --ref:#383835; }
+  }
+  .t { font: 600 15px system-ui, -apple-system, 'Segoe UI', sans-serif; fill: var(--ink); }
+  .st { font: 12px system-ui, -apple-system, 'Segoe UI', sans-serif; fill: var(--ink2); }
+  .lab { font: 12px system-ui, -apple-system, 'Segoe UI', sans-serif; fill: var(--ink2); }
+  .val { font: 12px system-ui, -apple-system, 'Segoe UI', sans-serif; fill: var(--ink); font-variant-numeric: tabular-nums; }
+  .ax { font: 11px system-ui, -apple-system, 'Segoe UI', sans-serif; fill: var(--muted); font-variant-numeric: tabular-nums; }
+</style>
+<title>Audit corpus (2026-09-24 build): entries by driver</title>
+<rect width="760" height="244" fill="var(--surface)"/>
+<text class="t" x="16" y="26">Audit corpus (2026-09-24 build): entries by driver</text>
+<text class="st" x="16" y="45">One driver per entry, read from the output&#x27;s structure, never from motive</text>
+<line x1="230.0" y1="58" x2="230.0" y2="208" stroke="var(--grid)" stroke-width="1"/>
+<text class="ax" x="230.0" y="224" text-anchor="middle">0</text>
+<line x1="345.0" y1="58" x2="345.0" y2="208" stroke="var(--grid)" stroke-width="1"/>
+<text class="ax" x="345.0" y="224" text-anchor="middle">250</text>
+<line x1="460.0" y1="58" x2="460.0" y2="208" stroke="var(--grid)" stroke-width="1"/>
+<text class="ax" x="460.0" y="224" text-anchor="middle">500</text>
+<line x1="575.0" y1="58" x2="575.0" y2="208" stroke="var(--grid)" stroke-width="1"/>
+<text class="ax" x="575.0" y="224" text-anchor="middle">750</text>
+<line x1="690.0" y1="58" x2="690.0" y2="208" stroke="var(--grid)" stroke-width="1"/>
+<text class="ax" x="690.0" y="224" text-anchor="middle">1,000</text>
+<text class="lab" x="222" y="80.0" text-anchor="end">pattern-output</text>
+<path d="M230.0,68.0 H478.1 Q482.1,68.0 482.1,72.0 V80.0 Q482.1,84.0 478.1,84.0 H230.0 Z" fill="var(--s1)"><title>pattern-output: 548</title></path>
+<text class="val" x="488.1" y="80.0">548</text>
+<text class="lab" x="222" y="104.0" text-anchor="end">self-protection</text>
+<path d="M230.0,92.0 H374.6 Q378.6,92.0 378.6,96.0 V104.0 Q378.6,108.0 374.6,108.0 H230.0 Z" fill="var(--s1)"><title>self-protection: 323</title></path>
+<text class="val" x="384.6" y="104.0">323</text>
+<text class="lab" x="222" y="128.0" text-anchor="end">manufactured-agreement</text>
+<path d="M230.0,116.0 H351.6 Q355.6,116.0 355.6,120.0 V128.0 Q355.6,132.0 351.6,132.0 H230.0 Z" fill="var(--s1)"><title>manufactured-agreement: 273</title></path>
+<text class="val" x="361.6" y="128.0">273</text>
+<text class="lab" x="222" y="152.0" text-anchor="end">letterhead-authority</text>
+<path d="M230.0,140.0 H273.8 Q277.8,140.0 277.8,144.0 V152.0 Q277.8,156.0 273.8,156.0 H230.0 Z" fill="var(--s1)"><title>letterhead-authority: 104</title></path>
+<text class="val" x="283.8" y="152.0">104</text>
+<text class="lab" x="222" y="176.0" text-anchor="end">false-characterization-of-user</text>
+<path d="M230.0,164.0 H255.9 Q259.9,164.0 259.9,168.0 V176.0 Q259.9,180.0 255.9,180.0 H230.0 Z" fill="var(--s1)"><title>false-characterization-of-user: 65</title></path>
+<text class="val" x="265.9" y="176.0">65</text>
+<text class="lab" x="222" y="200.0" text-anchor="end">agency-or-vendor-claim</text>
+<path d="M230.0,188.0 H242.1 Q246.1,188.0 246.1,192.0 V200.0 Q246.1,204.0 242.1,204.0 H230.0 Z" fill="var(--s1)"><title>agency-or-vendor-claim: 35</title></path>
+<text class="val" x="252.1" y="200.0">35</text>
+<line x1="230" y1="58" x2="230" y2="208" stroke="var(--axis)" stroke-width="1"/>
+</svg>

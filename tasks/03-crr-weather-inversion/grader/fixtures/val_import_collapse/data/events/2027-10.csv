@@ -1,0 +1,3 @@
+event_id,type,probability,region,intensity,outage_fraction
+H-1027,hurricane,0.22,METRO,0.80,0.35
+H-1027,hurricane,0.22,SOUTH,0.40,0.05

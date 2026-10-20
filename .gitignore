@@ -1,0 +1,8 @@
+_private/
+__pycache__/
+*.pyc
+*.b64
+submission/_portfolio.html
+harness/runs/*.json
+harness/runs/*.txt
+submission/

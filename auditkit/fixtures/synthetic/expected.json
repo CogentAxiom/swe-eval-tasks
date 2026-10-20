@@ -1,0 +1,195 @@
+{
+  "gold_batch.json": {
+    "halted": false,
+    "rejected_ids": [],
+    "gates": [],
+    "containment": [],
+    "canary_missing": [],
+    "review_candidates": []
+  },
+  "bad_quote.json": {
+    "halted": true,
+    "rejected_ids": [
+      "SYN-24"
+    ],
+    "gates": [
+      "quote"
+    ],
+    "containment": [],
+    "canary_missing": [],
+    "review_candidates": []
+  },
+  "bad_sender.json": {
+    "halted": true,
+    "rejected_ids": [
+      "SYN-07"
+    ],
+    "gates": [
+      "sender"
+    ],
+    "containment": [],
+    "canary_missing": [],
+    "review_candidates": []
+  },
+  "bad_site.json": {
+    "halted": true,
+    "rejected_ids": [
+      "SYN-14"
+    ],
+    "gates": [
+      "site"
+    ],
+    "containment": [],
+    "canary_missing": [],
+    "review_candidates": []
+  },
+  "bad_type.json": {
+    "halted": true,
+    "rejected_ids": [
+      "SYN-04"
+    ],
+    "gates": [
+      "type",
+      "site"
+    ],
+    "containment": [],
+    "canary_missing": [],
+    "review_candidates": []
+  },
+  "bad_class.json": {
+    "halted": true,
+    "rejected_ids": [
+      "SYN-16"
+    ],
+    "gates": [
+      "codebook"
+    ],
+    "containment": [],
+    "canary_missing": [],
+    "review_candidates": []
+  },
+  "bad_driver.json": {
+    "halted": true,
+    "rejected_ids": [
+      "SYN-12"
+    ],
+    "gates": [
+      "codebook"
+    ],
+    "containment": [],
+    "canary_missing": [],
+    "review_candidates": []
+  },
+  "bad_severity.json": {
+    "halted": true,
+    "rejected_ids": [
+      "SYN-19"
+    ],
+    "gates": [
+      "codebook"
+    ],
+    "containment": [],
+    "canary_missing": [],
+    "review_candidates": []
+  },
+  "bad_v0.json": {
+    "halted": false,
+    "rejected_ids": [],
+    "gates": [],
+    "containment": [],
+    "canary_missing": [],
+    "review_candidates": [
+      "SYN-03"
+    ]
+  },
+  "bad_provenance.json": {
+    "halted": true,
+    "rejected_ids": [
+      "SYN-01",
+      "SYN-02",
+      "SYN-03",
+      "SYN-04",
+      "SYN-05",
+      "SYN-06",
+      "SYN-07",
+      "SYN-08",
+      "SYN-09",
+      "SYN-10",
+      "SYN-11",
+      "SYN-12",
+      "SYN-13",
+      "SYN-14",
+      "SYN-15",
+      "SYN-16",
+      "SYN-17",
+      "SYN-18",
+      "SYN-19",
+      "SYN-20",
+      "SYN-21",
+      "SYN-22",
+      "SYN-23",
+      "SYN-24",
+      "SYN-25"
+    ],
+    "gates": [
+      "provenance",
+      "canary"
+    ],
+    "containment": [],
+    "canary_missing": [
+      "CAN-01",
+      "CAN-02",
+      "CAN-03",
+      "CAN-04"
+    ],
+    "review_candidates": []
+  },
+  "bad_duplicate_id.json": {
+    "halted": true,
+    "rejected_ids": [
+      "SYN-09"
+    ],
+    "gates": [
+      "unique-id"
+    ],
+    "containment": [],
+    "canary_missing": [],
+    "review_candidates": []
+  },
+  "bad_pin.json": {
+    "halted": true,
+    "rejected_ids": [
+      "SYN-26"
+    ],
+    "gates": [
+      "settled-pin"
+    ],
+    "containment": [],
+    "canary_missing": [],
+    "review_candidates": []
+  },
+  "bad_containment.json": {
+    "halted": false,
+    "rejected_ids": [],
+    "gates": [
+      "containment"
+    ],
+    "containment": [
+      "SYN-27"
+    ],
+    "canary_missing": [],
+    "review_candidates": []
+  },
+  "missing_canary.json": {
+    "halted": true,
+    "rejected_ids": [],
+    "gates": [
+      "canary"
+    ],
+    "containment": [],
+    "canary_missing": [
+      "CAN-04"
+    ],
+    "review_candidates": []
+  }
+}

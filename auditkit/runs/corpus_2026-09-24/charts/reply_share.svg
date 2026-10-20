@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="320" viewBox="0 0 760 320" role="img" aria-label="Audit corpus (2026-09-24 build): share of each conversation&#x27;s replies carrying an entry">
+
+<style>
+  svg { --surface:#fcfcfb; --ink:#0b0b0b; --ink2:#52514e; --muted:#898781; --grid:#e1e0d9; --axis:#c3c2b7;
+        --s1:#2a78d6; --o1:#86b6ef; --o2:#2a78d6; --o3:#104281; --ref:#c3c2b7; }
+  @media (prefers-color-scheme: dark) {
+    svg { --surface:#1a1a19; --ink:#f0efec; --ink2:#c3c2b7; --muted:#898781; --grid:#2c2c2a; --axis:#383835;
+          --s1:#3987e5; --o1:#184f95; --o2:#3987e5; --o3:#b7d3f6; --ref:#383835; }
+  }
+  .t { font: 600 15px system-ui, -apple-system, 'Segoe UI', sans-serif; fill: var(--ink); }
+  .st { font: 12px system-ui, -apple-system, 'Segoe UI', sans-serif; fill: var(--ink2); }
+  .lab { font: 12px system-ui, -apple-system, 'Segoe UI', sans-serif; fill: var(--ink2); }
+  .val { font: 12px system-ui, -apple-system, 'Segoe UI', sans-serif; fill: var(--ink); font-variant-numeric: tabular-nums; }
+  .ax { font: 11px system-ui, -apple-system, 'Segoe UI', sans-serif; fill: var(--muted); font-variant-numeric: tabular-nums; }
+</style>
+<title>Audit corpus (2026-09-24 build): share of each conversation&#x27;s replies carrying an entry</title>
+<rect width="760" height="320" fill="var(--surface)"/>
+<text class="t" x="16" y="26">Audit corpus (2026-09-24 build): share of each conversation&#x27;s replies carrying an entry</text>
+<text class="st" x="16" y="45">The 231 conversations with at least one reply: mean 29.0% across them, 43.8% within affected ones</text>
+<line x1="56" y1="264.0" x2="736" y2="264.0" stroke="var(--grid)" stroke-width="1"/>
+<text class="ax" x="50" y="268.0" text-anchor="end">0</text>
+<line x1="56" y1="214.0" x2="736" y2="214.0" stroke="var(--grid)" stroke-width="1"/>
+<text class="ax" x="50" y="218.0" text-anchor="end">25</text>
+<line x1="56" y1="164.0" x2="736" y2="164.0" stroke="var(--grid)" stroke-width="1"/>
+<text class="ax" x="50" y="168.0" text-anchor="end">50</text>
+<line x1="56" y1="114.0" x2="736" y2="114.0" stroke="var(--grid)" stroke-width="1"/>
+<text class="ax" x="50" y="118.0" text-anchor="end">75</text>
+<line x1="56" y1="64.0" x2="736" y2="64.0" stroke="var(--grid)" stroke-width="1"/>
+<text class="ax" x="50" y="68.0" text-anchor="end">100</text>
+<path d="M100.7,264.0 V112.0 Q100.7,108.0 104.7,108.0 H120.7 Q124.7,108.0 124.7,112.0 V264.0 Z" fill="var(--s1)"><title>none: 78</title></path>
+<text class="val" x="112.7" y="102.0" text-anchor="middle">78</text>
+<text class="ax" x="112.7" y="280.0" text-anchor="middle">none</text>
+<path d="M214.0,264.0 V252.0 Q214.0,248.0 218.0,248.0 H234.0 Q238.0,248.0 238.0,252.0 V264.0 Z" fill="var(--s1)"><title>up to 10%: 8</title></path>
+<text class="val" x="226.0" y="242.0" text-anchor="middle">8</text>
+<text class="ax" x="226.0" y="280.0" text-anchor="middle">up to 10%</text>
+<path d="M327.3,264.0 V184.0 Q327.3,180.0 331.3,180.0 H347.3 Q351.3,180.0 351.3,184.0 V264.0 Z" fill="var(--s1)"><title>10-25%: 42</title></path>
+<text class="val" x="339.3" y="174.0" text-anchor="middle">42</text>
+<text class="ax" x="339.3" y="280.0" text-anchor="middle">10-25%</text>
+<path d="M440.7,264.0 V138.0 Q440.7,134.0 444.7,134.0 H460.7 Q464.7,134.0 464.7,138.0 V264.0 Z" fill="var(--s1)"><title>25-50%: 65</title></path>
+<text class="val" x="452.7" y="128.0" text-anchor="middle">65</text>
+<text class="ax" x="452.7" y="280.0" text-anchor="middle">25-50%</text>
+<path d="M554.0,264.0 V244.0 Q554.0,240.0 558.0,240.0 H574.0 Q578.0,240.0 578.0,244.0 V264.0 Z" fill="var(--s1)"><title>50-75%: 12</title></path>
+<text class="val" x="566.0" y="234.0" text-anchor="middle">12</text>
+<text class="ax" x="566.0" y="280.0" text-anchor="middle">50-75%</text>
+<path d="M667.3,264.0 V216.0 Q667.3,212.0 671.3,212.0 H687.3 Q691.3,212.0 691.3,216.0 V264.0 Z" fill="var(--s1)"><title>over 75%: 26</title></path>
+<text class="val" x="679.3" y="206.0" text-anchor="middle">26</text>
+<text class="ax" x="679.3" y="280.0" text-anchor="middle">over 75%</text>
+<line x1="56" y1="264" x2="736" y2="264" stroke="var(--axis)" stroke-width="1"/>
+</svg>

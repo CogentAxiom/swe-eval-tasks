@@ -1,0 +1,29 @@
+customer_id,legal_name,country,is_affiliate,group_id,lc_backed,sp_rating
+C1001,Aldergrove Market Co.,US,N,,N,
+C1002,"Brightwater Grocers, Inc.",US,N,,N,BB
+C1003,Canyon Ridge Foodservice LLC,US,N,,N,
+C1004,Bluestem Foods Corporation,US,N,,N,A-
+C1005,Delmar Hospitality Group,US,N,,N,
+C1006,Eastfield Co-op Supply,US,N,,N,
+C1007,"Foxhollow Restaurants, Inc.",US,N,,N,
+C1008,"Pinecrest Markets, Inc.",US,N,G-PINE,N,BB+
+C1009,"Pinecrest Markets of Ohio, LLC",US,N,G-PINE,N,
+C1010,Granite Bay Provisions Ltd.,CA,N,,N,
+C1011,Carrow Industrial Supply Co.,US,N,,N,BBB-
+C1012,Halvorsen Grocery Group,US,N,,N,BBB
+C1013,Bluestem Farms Cooperative,US,N,,N,A
+C1014,Ironwood Catering Services,US,N,,N,
+C1015,Ridgeway Packaging Co.,US,N,,N,
+C1016,Juniper Lane Bakeries,US,N,,N,
+C1017,Kittredge School District Food Services,US,N,,N,
+C1018,Lakemont Health System,US,N,,N,AA-
+C1019,Mesa Verde Fresh Markets,US,N,,N,
+C1020,Distribuidora Ocotlan S.A. de C.V.,MX,N,,N,
+C1021,Kestrel Imports Ltd,GB,N,,Y,
+C1022,Northgate Convenience Partners,US,N,,N,
+C1023,Orchard Point Cafes LLC,US,N,,N,
+C1024,Prairie Hearth Restaurants,US,N,,N,
+C1025,Quarry Hill Institutional Dining,US,N,,N,
+C1026,Saltmarsh Seafood Co.,US,N,,N,
+C1027,Larkspur Provisions Canada ULC,CA,Y,G-LARK,N,
+C1028,Tamarack Vending Inc.,US,N,,N,

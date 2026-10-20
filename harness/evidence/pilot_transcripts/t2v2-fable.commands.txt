@@ -1,0 +1,13 @@
+# t2v2-fable: {'Bash': 12, 'Read': 7, 'Write': 8, 'SubagentHandback': 1}
+  1. cd "C:/Users/Jonathan/AppData/Local/Temp/claude/C--Users-Jonathan-Documents-Polaris/32e09bfa-a649-4471-9064-18   []
+  2. cd "C:/Users/Jonathan/AppData/Local/Temp/claude/C--Users-Jonathan-Documents-Polaris/32e09bfa-a649-4471-9064-18   []
+  3. cd "C:/Users/Jonathan/AppData/Local/Temp/claude/C--Users-Jonathan-Documents-Polaris/32e09bfa-a649-4471-9064-18   []
+  4. cd "C:/Users/Jonathan/AppData/Local/Temp/claude/C--Users-Jonathan-Documents-Polaris/32e09bfa-a649-4471-9064-18   []
+  5. cd "C:/Users/Jonathan/AppData/Local/Temp/claude/C--Users-Jonathan-Documents-Polaris/32e09bfa-a649-4471-9064-18   []
+  6. cd "C:/Users/Jonathan/AppData/Local/Temp/claude/C--Users-Jonathan-Documents-Polaris/32e09bfa-a649-4471-9064-18   [unittest imports-pkg]
+  7. cd "C:/Users/Jonathan/AppData/Local/Temp/claude/C--Users-Jonathan-Documents-Polaris/32e09bfa-a649-4471-9064-18   []
+  8. cd "C:/Users/Jonathan/AppData/Local/Temp/claude/C--Users-Jonathan-Documents-Polaris/32e09bfa-a649-4471-9064-18   []
+  9. cd "C:/Users/Jonathan/AppData/Local/Temp/claude/C--Users-Jonathan-Documents-Polaris/32e09bfa-a649-4471-9064-18   [unittest imports-pkg]
+ 10. cd "C:/Users/Jonathan/AppData/Local/Temp/claude/C--Users-Jonathan-Documents-Polaris/32e09bfa-a649-4471-9064-18   [inline-py]
+ 11. cd "C:/Users/Jonathan/AppData/Local/Temp/claude/C--Users-Jonathan-Documents-Polaris/32e09bfa-a649-4471-9064-18   [imports-pkg inline-py]
+ 12. cd "C:/Users/Jonathan/AppData/Local/Temp/claude/C--Users-Jonathan-Documents-Polaris/32e09bfa-a649-4471-9064-18   [unittest imports-pkg]
