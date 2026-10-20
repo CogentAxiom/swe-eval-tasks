@@ -1,0 +1,3 @@
+event_id,type,probability,region,intensity,outage_fraction
+HW-0826,heat,0.20,NORTH,0.80,0.00
+HW-0826,heat,0.20,METRO,0.60,0.02

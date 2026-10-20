@@ -1,0 +1,5 @@
+operating_day,charge_type,settlement_point,original_operating_day,amount
+2027-03-14,RT_ENERGY,LZ_METRO,,19283.01
+2027-03-14,RT_ENERGY,PGO_HUB_NORTH,,27212.99
+2027-03-14,RT_ENERGY,PGO_HUB_SOUTH,,16673.08
+2027-03-14,ADMIN_FEE,,,226.94

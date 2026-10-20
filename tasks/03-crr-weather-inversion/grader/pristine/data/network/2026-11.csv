@@ -1,0 +1,5 @@
+constraint_id,monitored_element,contingency,import_region,shadow_price,binding_probability
+METRO_IMPORT,North-Metro 345 kV,Loss of South-Metro 345 kV double circuit,METRO,8.00,0.45
+WEST_EXPORT,West-Central 345 kV interface,Loss of West-North 345 kV,,9.00,0.65
+NORTH_IMPORT,Metro-North and South-North 345 kV,Loss of South-North 345 kV circuit 2,NORTH,14.00,0.60
+PAN_NORTH,Panhandle-North 345 kV,Loss of Panhandle-North circuit 1,,6.00,0.50

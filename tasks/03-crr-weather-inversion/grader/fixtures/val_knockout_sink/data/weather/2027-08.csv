@@ -1,0 +1,6 @@
+region,load_pressure,wind_10m,wind_100m,temp_2m,temp_100m
+METRO,0.70,4.0,5.0,18.0,16.5
+NORTH,0.55,4.0,5.0,18.0,16.5
+SOUTH,0.60,4.0,5.0,18.0,16.5
+WEST,0.30,5.2,6.9,18.0,16.5
+PANHANDLE,0.25,5.6,7.3,18.0,16.5

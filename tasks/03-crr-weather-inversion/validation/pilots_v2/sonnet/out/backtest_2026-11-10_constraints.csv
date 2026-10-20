@@ -1,0 +1,10 @@
+hour,element,model_binds,pgo_binds,match,model_flow_mw,limit_mw,model_shadow_price,pgo_shadow_price
+8,NORTH_IMPORT,True,False,False,820.000,820,9.72,
+9,NORTH_IMPORT,True,False,False,820.000,820,9.72,
+17,NORTH_IMPORT,True,False,False,600.000,600,22.58,
+18,NORTH_IMPORT,True,True,True,600.000,600,125.00,9.72
+19,NORTH_IMPORT,True,True,True,600.000,600,125.00,9.72
+20,NORTH_IMPORT,True,True,True,600.000,600,125.00,125.00
+21,NORTH_IMPORT,True,True,True,600.000,600,22.58,22.58
+22,NORTH_IMPORT,True,True,True,600.000,600,45.95,45.95
+23,NORTH_IMPORT,True,True,True,600.000,600,45.95,45.95

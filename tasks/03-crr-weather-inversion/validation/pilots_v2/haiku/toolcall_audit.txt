@@ -1,0 +1,1 @@
+t3v2-haiku: 68 tool calls, 0 outside the workspace

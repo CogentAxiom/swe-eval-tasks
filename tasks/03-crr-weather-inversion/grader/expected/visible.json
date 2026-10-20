@@ -1,0 +1,263 @@
+{
+  "valuation_2026-11": {
+    "P01": "1.75",
+    "P02": "20.18",
+    "P03": "4.65",
+    "P04": "27.18",
+    "P05": "21.88",
+    "P06": "-3.45",
+    "P07": "-4.95",
+    "P08": "14.50",
+    "P09": "9.02",
+    "P10": "25.18"
+  },
+  "risk_p07": {
+    "engine": "5.10",
+    "risk": "7.94"
+  },
+  "backtest_day": "2026-11-10",
+  "dispatch_day": "2026-11-17",
+  "backtest_lmps": {
+    "0": {
+      "LZ_METRO": "35.00",
+      "LZ_NORTH": "35.00",
+      "LZ_PANHANDLE": "35.00",
+      "LZ_SOUTH": "35.00",
+      "LZ_WEST": "35.00",
+      "PGO_HUB_NORTH": "35.00",
+      "PGO_HUB_SOUTH": "35.00",
+      "PGO_HUB_WEST": "35.00"
+    },
+    "1": {
+      "LZ_METRO": "35.00",
+      "LZ_NORTH": "35.00",
+      "LZ_PANHANDLE": "35.00",
+      "LZ_SOUTH": "35.00",
+      "LZ_WEST": "35.00",
+      "PGO_HUB_NORTH": "35.00",
+      "PGO_HUB_SOUTH": "35.00",
+      "PGO_HUB_WEST": "35.00"
+    },
+    "2": {
+      "LZ_METRO": "35.00",
+      "LZ_NORTH": "35.00",
+      "LZ_PANHANDLE": "35.00",
+      "LZ_SOUTH": "35.00",
+      "LZ_WEST": "35.00",
+      "PGO_HUB_NORTH": "35.00",
+      "PGO_HUB_SOUTH": "35.00",
+      "PGO_HUB_WEST": "35.00"
+    },
+    "3": {
+      "LZ_METRO": "35.00",
+      "LZ_NORTH": "35.00",
+      "LZ_PANHANDLE": "35.00",
+      "LZ_SOUTH": "35.00",
+      "LZ_WEST": "35.00",
+      "PGO_HUB_NORTH": "35.00",
+      "PGO_HUB_SOUTH": "35.00",
+      "PGO_HUB_WEST": "35.00"
+    },
+    "4": {
+      "LZ_METRO": "35.00",
+      "LZ_NORTH": "35.00",
+      "LZ_PANHANDLE": "35.00",
+      "LZ_SOUTH": "35.00",
+      "LZ_WEST": "35.00",
+      "PGO_HUB_NORTH": "35.00",
+      "PGO_HUB_SOUTH": "35.00",
+      "PGO_HUB_WEST": "35.00"
+    },
+    "5": {
+      "LZ_METRO": "35.00",
+      "LZ_NORTH": "35.00",
+      "LZ_PANHANDLE": "35.00",
+      "LZ_SOUTH": "35.00",
+      "LZ_WEST": "35.00",
+      "PGO_HUB_NORTH": "35.00",
+      "PGO_HUB_SOUTH": "35.00",
+      "PGO_HUB_WEST": "35.00"
+    },
+    "6": {
+      "LZ_METRO": "48.00",
+      "LZ_NORTH": "48.00",
+      "LZ_PANHANDLE": "48.00",
+      "LZ_SOUTH": "48.00",
+      "LZ_WEST": "48.00",
+      "PGO_HUB_NORTH": "48.00",
+      "PGO_HUB_SOUTH": "48.00",
+      "PGO_HUB_WEST": "48.00"
+    },
+    "7": {
+      "LZ_METRO": "48.00",
+      "LZ_NORTH": "48.00",
+      "LZ_PANHANDLE": "48.00",
+      "LZ_SOUTH": "48.00",
+      "LZ_WEST": "48.00",
+      "PGO_HUB_NORTH": "48.00",
+      "PGO_HUB_SOUTH": "48.00",
+      "PGO_HUB_WEST": "48.00"
+    },
+    "8": {
+      "LZ_METRO": "55.97",
+      "LZ_NORTH": "62.00",
+      "LZ_PANHANDLE": "57.92",
+      "LZ_SOUTH": "54.81",
+      "LZ_WEST": "56.75",
+      "PGO_HUB_NORTH": "61.61",
+      "PGO_HUB_SOUTH": "55.00",
+      "PGO_HUB_WEST": "56.75"
+    },
+    "9": {
+      "LZ_METRO": "55.97",
+      "LZ_NORTH": "62.00",
+      "LZ_PANHANDLE": "57.92",
+      "LZ_SOUTH": "54.81",
+      "LZ_WEST": "56.75",
+      "PGO_HUB_NORTH": "61.61",
+      "PGO_HUB_SOUTH": "55.00",
+      "PGO_HUB_WEST": "56.75"
+    },
+    "10": {
+      "LZ_METRO": "55.00",
+      "LZ_NORTH": "55.00",
+      "LZ_PANHANDLE": "55.00",
+      "LZ_SOUTH": "55.00",
+      "LZ_WEST": "55.00",
+      "PGO_HUB_NORTH": "55.00",
+      "PGO_HUB_SOUTH": "55.00",
+      "PGO_HUB_WEST": "55.00"
+    },
+    "11": {
+      "LZ_METRO": "48.00",
+      "LZ_NORTH": "48.00",
+      "LZ_PANHANDLE": "48.00",
+      "LZ_SOUTH": "48.00",
+      "LZ_WEST": "48.00",
+      "PGO_HUB_NORTH": "48.00",
+      "PGO_HUB_SOUTH": "48.00",
+      "PGO_HUB_WEST": "48.00"
+    },
+    "12": {
+      "LZ_METRO": "48.00",
+      "LZ_NORTH": "48.00",
+      "LZ_PANHANDLE": "48.00",
+      "LZ_SOUTH": "48.00",
+      "LZ_WEST": "48.00",
+      "PGO_HUB_NORTH": "48.00",
+      "PGO_HUB_SOUTH": "48.00",
+      "PGO_HUB_WEST": "48.00"
+    },
+    "13": {
+      "LZ_METRO": "48.00",
+      "LZ_NORTH": "48.00",
+      "LZ_PANHANDLE": "48.00",
+      "LZ_SOUTH": "48.00",
+      "LZ_WEST": "48.00",
+      "PGO_HUB_NORTH": "48.00",
+      "PGO_HUB_SOUTH": "48.00",
+      "PGO_HUB_WEST": "48.00"
+    },
+    "14": {
+      "LZ_METRO": "48.00",
+      "LZ_NORTH": "48.00",
+      "LZ_PANHANDLE": "48.00",
+      "LZ_SOUTH": "48.00",
+      "LZ_WEST": "48.00",
+      "PGO_HUB_NORTH": "48.00",
+      "PGO_HUB_SOUTH": "48.00",
+      "PGO_HUB_WEST": "48.00"
+    },
+    "15": {
+      "LZ_METRO": "48.00",
+      "LZ_NORTH": "48.00",
+      "LZ_PANHANDLE": "48.00",
+      "LZ_SOUTH": "48.00",
+      "LZ_WEST": "48.00",
+      "PGO_HUB_NORTH": "48.00",
+      "PGO_HUB_SOUTH": "48.00",
+      "PGO_HUB_WEST": "48.00"
+    },
+    "16": {
+      "LZ_METRO": "48.00",
+      "LZ_NORTH": "48.00",
+      "LZ_PANHANDLE": "48.00",
+      "LZ_SOUTH": "48.00",
+      "LZ_WEST": "48.00",
+      "PGO_HUB_NORTH": "48.00",
+      "PGO_HUB_SOUTH": "48.00",
+      "PGO_HUB_WEST": "48.00"
+    },
+    "17": {
+      "LZ_METRO": "48.00",
+      "LZ_NORTH": "62.00",
+      "LZ_PANHANDLE": "52.52",
+      "LZ_SOUTH": "45.29",
+      "LZ_WEST": "49.81",
+      "PGO_HUB_NORTH": "61.10",
+      "PGO_HUB_SOUTH": "45.74",
+      "PGO_HUB_WEST": "49.81"
+    },
+    "18": {
+      "LZ_METRO": "67.50",
+      "LZ_NORTH": "145.00",
+      "LZ_PANHANDLE": "92.50",
+      "LZ_SOUTH": "52.50",
+      "LZ_WEST": "77.50",
+      "PGO_HUB_NORTH": "140.00",
+      "PGO_HUB_SOUTH": "55.00",
+      "PGO_HUB_WEST": "77.50"
+    },
+    "19": {
+      "LZ_METRO": "67.50",
+      "LZ_NORTH": "145.00",
+      "LZ_PANHANDLE": "92.50",
+      "LZ_SOUTH": "52.50",
+      "LZ_WEST": "77.50",
+      "PGO_HUB_NORTH": "140.00",
+      "PGO_HUB_SOUTH": "55.00",
+      "PGO_HUB_WEST": "77.50"
+    },
+    "20": {
+      "LZ_METRO": "67.50",
+      "LZ_NORTH": "145.00",
+      "LZ_PANHANDLE": "92.50",
+      "LZ_SOUTH": "52.50",
+      "LZ_WEST": "77.50",
+      "PGO_HUB_NORTH": "140.00",
+      "PGO_HUB_SOUTH": "55.00",
+      "PGO_HUB_WEST": "77.50"
+    },
+    "21": {
+      "LZ_METRO": "48.00",
+      "LZ_NORTH": "62.00",
+      "LZ_PANHANDLE": "52.52",
+      "LZ_SOUTH": "45.29",
+      "LZ_WEST": "49.81",
+      "PGO_HUB_NORTH": "61.10",
+      "PGO_HUB_SOUTH": "45.74",
+      "PGO_HUB_WEST": "49.81"
+    },
+    "22": {
+      "LZ_METRO": "33.51",
+      "LZ_NORTH": "62.00",
+      "LZ_PANHANDLE": "42.70",
+      "LZ_SOUTH": "28.00",
+      "LZ_WEST": "37.19",
+      "PGO_HUB_NORTH": "60.16",
+      "PGO_HUB_SOUTH": "28.92",
+      "PGO_HUB_WEST": "37.19"
+    },
+    "23": {
+      "LZ_METRO": "33.51",
+      "LZ_NORTH": "62.00",
+      "LZ_PANHANDLE": "42.70",
+      "LZ_SOUTH": "28.00",
+      "LZ_WEST": "37.19",
+      "PGO_HUB_NORTH": "60.16",
+      "PGO_HUB_SOUTH": "28.92",
+      "PGO_HUB_WEST": "37.19"
+    }
+  },
+  "dispatch_optimum": "1536059.9112903227"
+}
