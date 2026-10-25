@@ -91,9 +91,10 @@ def hbar(rows: list[tuple[str, float]], title: str, subtitle: str = "", label_w:
     return "\n".join(x for x in out if x)
 
 
-def columns(cols: list[tuple[str, float]], title: str, subtitle: str = "", width: int = 760, height: int = 320, fmt=lambda v: f"{v:,.0f}", notes: list[str] | None = None) -> str:
-    """Single-series columns, value on each cap."""
-    top, bottom, left = 64, 56, 56
+def columns(cols: list[tuple[str, float]], title: str, subtitle: str = "", width: int = 760, height: int = 320, fmt=lambda v: f"{v:,.0f}", notes: list[str] | None = None,
+            x_label: str = "", y_label: str = "") -> str:
+    """Single-series columns, value on each cap; optional axis titles."""
+    top, bottom, left = 64, 56, 56 + (18 if y_label else 0)
     plot_h = height - top - bottom
     plot_w = width - left - 24
     band = plot_w / max(1, len(cols))
@@ -113,6 +114,10 @@ def columns(cols: list[tuple[str, float]], title: str, subtitle: str = "", width
         for j, part in enumerate(name.split("\n")):
             out.append(f'<text class="ax" x="{x + thick / 2:.1f}" y="{base + 16 + 13 * j:.1f}" text-anchor="middle">{escape(part)}</text>')
     out.append(f'<line x1="{left}" y1="{base}" x2="{left + plot_w}" y2="{base}" stroke="var(--axis)" stroke-width="1"/>')
+    if x_label:
+        out.append(f'<text class="lab" x="{left + plot_w / 2:.1f}" y="{height - 12}" text-anchor="middle">{escape(x_label)}</text>')
+    if y_label:
+        out.append(f'<text class="lab" transform="translate(18,{top + plot_h / 2:.1f}) rotate(-90)" text-anchor="middle">{escape(y_label)}</text>')
     out.append("</svg>")
     return "\n".join(x for x in out if x)
 

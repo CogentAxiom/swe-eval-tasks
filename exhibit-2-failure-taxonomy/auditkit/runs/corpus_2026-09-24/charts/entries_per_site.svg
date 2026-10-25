@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="760" height="320" viewBox="0 0 760 320" role="img" aria-label="Audit corpus (2026-09-24 build): entries per message">
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="320" viewBox="0 0 760 320" role="img" aria-label="Audit corpus (2026-09-24 build): errors per reply">
 
 <style>
   svg { --surface:#fcfcfb; --ink:#0b0b0b; --ink2:#52514e; --muted:#898781; --grid:#e1e0d9; --axis:#c3c2b7;
@@ -13,46 +13,48 @@
   .val { font: 12px system-ui, -apple-system, 'Segoe UI', sans-serif; fill: var(--ink); font-variant-numeric: tabular-nums; }
   .ax { font: 11px system-ui, -apple-system, 'Segoe UI', sans-serif; fill: var(--muted); font-variant-numeric: tabular-nums; }
 </style>
-<title>Audit corpus (2026-09-24 build): entries per message</title>
+<title>Audit corpus (2026-09-24 build): errors per reply</title>
 <rect width="760" height="320" fill="var(--surface)"/>
-<text class="t" x="16" y="26">Audit corpus (2026-09-24 build): entries per message</text>
-<text class="st" x="16" y="45">Distinct failures in one assistant message</text>
-<line x1="56" y1="264.0" x2="736" y2="264.0" stroke="var(--grid)" stroke-width="1"/>
-<text class="ax" x="50" y="268.0" text-anchor="end">0</text>
-<line x1="56" y1="214.0" x2="736" y2="214.0" stroke="var(--grid)" stroke-width="1"/>
-<text class="ax" x="50" y="218.0" text-anchor="end">250</text>
-<line x1="56" y1="164.0" x2="736" y2="164.0" stroke="var(--grid)" stroke-width="1"/>
-<text class="ax" x="50" y="168.0" text-anchor="end">500</text>
-<line x1="56" y1="114.0" x2="736" y2="114.0" stroke="var(--grid)" stroke-width="1"/>
-<text class="ax" x="50" y="118.0" text-anchor="end">750</text>
-<line x1="56" y1="64.0" x2="736" y2="64.0" stroke="var(--grid)" stroke-width="1"/>
-<text class="ax" x="50" y="68.0" text-anchor="end">1,000</text>
-<path d="M81.8,264.0 V130.0 Q81.8,126.0 85.8,126.0 H101.8 Q105.8,126.0 105.8,130.0 V264.0 Z" fill="var(--s1)"><title>1: 690</title></path>
-<text class="val" x="93.8" y="120.0" text-anchor="middle">690</text>
-<text class="ax" x="93.8" y="280.0" text-anchor="middle">1</text>
-<path d="M157.3,264.0 V229.8 Q157.3,225.8 161.3,225.8 H177.3 Q181.3,225.8 181.3,229.8 V264.0 Z" fill="var(--s1)"><title>2: 191</title></path>
-<text class="val" x="169.3" y="219.8" text-anchor="middle">191</text>
-<text class="ax" x="169.3" y="280.0" text-anchor="middle">2</text>
-<path d="M232.9,264.0 V258.2 Q232.9,254.2 236.9,254.2 H252.9 Q256.9,254.2 256.9,258.2 V264.0 Z" fill="var(--s1)"><title>3: 49</title></path>
-<text class="val" x="244.9" y="248.2" text-anchor="middle">49</text>
-<text class="ax" x="244.9" y="280.0" text-anchor="middle">3</text>
-<path d="M308.4,264.0 V264.0 Q308.4,260.2 312.2,260.2 H328.6 Q332.4,260.2 332.4,264.0 V264.0 Z" fill="var(--s1)"><title>4: 19</title></path>
-<text class="val" x="320.4" y="254.2" text-anchor="middle">19</text>
-<text class="ax" x="320.4" y="280.0" text-anchor="middle">4</text>
-<path d="M384.0,264.0 V264.0 Q384.0,263.4 384.6,263.4 H407.4 Q408.0,263.4 408.0,264.0 V264.0 Z" fill="var(--s1)"><title>5: 3</title></path>
-<text class="val" x="396.0" y="257.4" text-anchor="middle">3</text>
-<text class="ax" x="396.0" y="280.0" text-anchor="middle">5</text>
-<path d="M459.6,264.0 V264.0 Q459.6,263.6 460.0,263.6 H483.2 Q483.6,263.6 483.6,264.0 V264.0 Z" fill="var(--s1)"><title>6: 2</title></path>
-<text class="val" x="471.6" y="257.6" text-anchor="middle">2</text>
-<text class="ax" x="471.6" y="280.0" text-anchor="middle">6</text>
-<path d="M535.1,264.0 V264.0 Q535.1,263.8 535.3,263.8 H558.9 Q559.1,263.8 559.1,264.0 V264.0 Z" fill="var(--s1)"><title>7: 1</title></path>
-<text class="val" x="547.1" y="257.8" text-anchor="middle">1</text>
-<text class="ax" x="547.1" y="280.0" text-anchor="middle">7</text>
-<path d="M610.7,264.0 V264.0 Q610.7,263.8 610.9,263.8 H634.5 Q634.7,263.8 634.7,264.0 V264.0 Z" fill="var(--s1)"><title>9: 1</title></path>
-<text class="val" x="622.7" y="257.8" text-anchor="middle">1</text>
-<text class="ax" x="622.7" y="280.0" text-anchor="middle">9</text>
-<path d="M686.2,264.0 V264.0 Q686.2,263.8 686.4,263.8 H710.0 Q710.2,263.8 710.2,264.0 V264.0 Z" fill="var(--s1)"><title>10: 1</title></path>
-<text class="val" x="698.2" y="257.8" text-anchor="middle">1</text>
-<text class="ax" x="698.2" y="280.0" text-anchor="middle">10</text>
-<line x1="56" y1="264" x2="736" y2="264" stroke="var(--axis)" stroke-width="1"/>
+<text class="t" x="16" y="26">Audit corpus (2026-09-24 build): errors per reply</text>
+<text class="st" x="16" y="45">How many single model replies (one turn each) held 1, 2, 3 or more verified errors</text>
+<line x1="74" y1="264.0" x2="736" y2="264.0" stroke="var(--grid)" stroke-width="1"/>
+<text class="ax" x="68" y="268.0" text-anchor="end">0</text>
+<line x1="74" y1="214.0" x2="736" y2="214.0" stroke="var(--grid)" stroke-width="1"/>
+<text class="ax" x="68" y="218.0" text-anchor="end">250</text>
+<line x1="74" y1="164.0" x2="736" y2="164.0" stroke="var(--grid)" stroke-width="1"/>
+<text class="ax" x="68" y="168.0" text-anchor="end">500</text>
+<line x1="74" y1="114.0" x2="736" y2="114.0" stroke="var(--grid)" stroke-width="1"/>
+<text class="ax" x="68" y="118.0" text-anchor="end">750</text>
+<line x1="74" y1="64.0" x2="736" y2="64.0" stroke="var(--grid)" stroke-width="1"/>
+<text class="ax" x="68" y="68.0" text-anchor="end">1,000</text>
+<path d="M98.8,264.0 V130.0 Q98.8,126.0 102.8,126.0 H118.8 Q122.8,126.0 122.8,130.0 V264.0 Z" fill="var(--s1)"><title>1: 690</title></path>
+<text class="val" x="110.8" y="120.0" text-anchor="middle">690</text>
+<text class="ax" x="110.8" y="280.0" text-anchor="middle">1</text>
+<path d="M172.3,264.0 V229.8 Q172.3,225.8 176.3,225.8 H192.3 Q196.3,225.8 196.3,229.8 V264.0 Z" fill="var(--s1)"><title>2: 191</title></path>
+<text class="val" x="184.3" y="219.8" text-anchor="middle">191</text>
+<text class="ax" x="184.3" y="280.0" text-anchor="middle">2</text>
+<path d="M245.9,264.0 V258.2 Q245.9,254.2 249.9,254.2 H265.9 Q269.9,254.2 269.9,258.2 V264.0 Z" fill="var(--s1)"><title>3: 49</title></path>
+<text class="val" x="257.9" y="248.2" text-anchor="middle">49</text>
+<text class="ax" x="257.9" y="280.0" text-anchor="middle">3</text>
+<path d="M319.4,264.0 V264.0 Q319.4,260.2 323.2,260.2 H339.6 Q343.4,260.2 343.4,264.0 V264.0 Z" fill="var(--s1)"><title>4: 19</title></path>
+<text class="val" x="331.4" y="254.2" text-anchor="middle">19</text>
+<text class="ax" x="331.4" y="280.0" text-anchor="middle">4</text>
+<path d="M393.0,264.0 V264.0 Q393.0,263.4 393.6,263.4 H416.4 Q417.0,263.4 417.0,264.0 V264.0 Z" fill="var(--s1)"><title>5: 3</title></path>
+<text class="val" x="405.0" y="257.4" text-anchor="middle">3</text>
+<text class="ax" x="405.0" y="280.0" text-anchor="middle">5</text>
+<path d="M466.6,264.0 V264.0 Q466.6,263.6 467.0,263.6 H490.2 Q490.6,263.6 490.6,264.0 V264.0 Z" fill="var(--s1)"><title>6: 2</title></path>
+<text class="val" x="478.6" y="257.6" text-anchor="middle">2</text>
+<text class="ax" x="478.6" y="280.0" text-anchor="middle">6</text>
+<path d="M540.1,264.0 V264.0 Q540.1,263.8 540.3,263.8 H563.9 Q564.1,263.8 564.1,264.0 V264.0 Z" fill="var(--s1)"><title>7: 1</title></path>
+<text class="val" x="552.1" y="257.8" text-anchor="middle">1</text>
+<text class="ax" x="552.1" y="280.0" text-anchor="middle">7</text>
+<path d="M613.7,264.0 V264.0 Q613.7,263.8 613.9,263.8 H637.5 Q637.7,263.8 637.7,264.0 V264.0 Z" fill="var(--s1)"><title>9: 1</title></path>
+<text class="val" x="625.7" y="257.8" text-anchor="middle">1</text>
+<text class="ax" x="625.7" y="280.0" text-anchor="middle">9</text>
+<path d="M687.2,264.0 V264.0 Q687.2,263.8 687.4,263.8 H711.0 Q711.2,263.8 711.2,264.0 V264.0 Z" fill="var(--s1)"><title>10: 1</title></path>
+<text class="val" x="699.2" y="257.8" text-anchor="middle">1</text>
+<text class="ax" x="699.2" y="280.0" text-anchor="middle">10</text>
+<line x1="74" y1="264" x2="736" y2="264" stroke="var(--axis)" stroke-width="1"/>
+<text class="lab" x="405.0" y="308" text-anchor="middle">Verified errors in one reply</text>
+<text class="lab" transform="translate(18,164.0) rotate(-90)" text-anchor="middle">Number of replies</text>
 </svg>

@@ -140,7 +140,9 @@ def chart_set(stats: dict[str, Any], outdir: str | Path, label: str, class_order
     cells = [[c["class_x_driver"].get(k, {}).get(d, 0) for d in drivers] for k in classes]
     put("class_x_driver", charts.heatmap(classes, drivers, cells, f"{label}: class by driver", "Entries in each cell"))
     eps = c["entries_per_site"]
-    put("entries_per_site", charts.columns([(k, v) for k, v in eps.items()], f"{label}: entries per message", "Distinct failures in one assistant message"))
+    put("entries_per_site", charts.columns([(k, v) for k, v in eps.items()], f"{label}: errors per reply",
+                                           "How many single model replies (one turn each) held 1, 2, 3 or more verified errors",
+                                           x_label="Verified errors in one reply", y_label="Number of replies"))
     conc = c["concentration"]
     r = stats.get("rate") or {}
     spread = (f"; {r['affected_conversations']} of {r['population_conversations']} conversations ({r['affected_pct']}%) hold at least one"
