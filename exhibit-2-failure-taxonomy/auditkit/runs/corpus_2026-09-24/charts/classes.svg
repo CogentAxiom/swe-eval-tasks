@@ -63,8 +63,8 @@
 <text class="lab" x="242" y="344.0" text-anchor="end">supplied-frame</text>
 <path d="M250.0,332.0 H268.9 Q272.9,332.0 272.9,336.0 V344.0 Q272.9,348.0 268.9,348.0 H250.0 Z" fill="var(--s1)"><title>supplied-frame: 26</title></path>
 <text class="val" x="278.9" y="344.0">26</text>
-<text class="lab" x="242" y="368.0" text-anchor="end">unfounded-clinical-assessment</text>
-<path d="M250.0,356.0 H268.0 Q272.0,356.0 272.0,360.0 V368.0 Q272.0,372.0 268.0,372.0 H250.0 Z" fill="var(--s1)"><title>unfounded-clinical-assessment: 25</title></path>
+<text class="lab" x="242" y="368.0" text-anchor="end">wrongful-clinical-assessment</text>
+<path d="M250.0,356.0 H268.0 Q272.0,356.0 272.0,360.0 V368.0 Q272.0,372.0 268.0,372.0 H250.0 Z" fill="var(--s1)"><title>wrongful-clinical-assessment: 25</title></path>
 <text class="val" x="278.0" y="368.0">25</text>
 <text class="lab" x="242" y="392.0" text-anchor="end">curated-concession</text>
 <path d="M250.0,380.0 H263.6 Q267.6,380.0 267.6,384.0 V392.0 Q267.6,396.0 263.6,396.0 H250.0 Z" fill="var(--s1)"><title>curated-concession: 20</title></path>

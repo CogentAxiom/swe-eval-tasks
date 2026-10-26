@@ -191,7 +191,7 @@
   "source": "AUDIT_RUBRIC.md s4 class table"
  },
  {
-  "path": "corpus.by_class.unfounded-clinical-assessment",
+  "path": "corpus.by_class.wrongful-clinical-assessment",
   "value": 25,
   "source": "AUDIT_RUBRIC.md s4 class table"
  },
