@@ -7,7 +7,7 @@ that leans on one signal at a time, and the loader that turns picks into ERCOT's
 all of them. The engine prices 1 MW and the person sizes at submittal. Nothing is submitted from the desk. And no
 signal moves a dollar until it has earned it.
 
-Figures and screenshots are from the live desk after the 2026-10-26 nightly run. Paths, prices and bids are
+Figures and screenshots are from the live desk in late October 2026. Paths, prices and bids are
 pixelated, and three desk labels that are being corrected were edited out of the screenshots. Two more tabs on this
 desk are not shown at all, because they carry the desk's edge.
 
@@ -42,13 +42,13 @@ they ride, and on the engine's clock to be fitted or retired. The value is price
 own lane into the forward months, and a lane opens only when its effect shows up statistically and holds up long
 enough. A new indicator that surfaces is added the same way. The statistics behind the lanes are recomputed every
 night, so the evidence for opening or closing one stays current. Ultra Prediction's registry shows every lane and its
-state; on this run:
+state; in late October 2026:
 - **Macro weather.** Climate signals earn their place through a 75-year, 2,304-test scan under false-discovery
   control and a region-by-month hindcast gate (the exhibit's
   [macro-to-micro section](../README.md#macro-to-micro-how-a-covariate-earns-its-way-in)), and the survivors size
   tail exposure. A separate switch would let one move the bid value itself. It stays off: tested walk-forward over
   1985 to 2026, it added no explanation over plain climatology.
-- **Nuclear.** The NRC's daily reactor report flags derations at each plant's node (one active on this run).
+- **Nuclear.** The NRC's daily reactor report flags derations at each plant's node (one active in late October 2026).
 - **Retirements and derates.** Dated, and from each event's month on they nudge the rank through small hand-set
   multipliers; they never change the bid value.
 - **New generation and transmission projects.** Mapped to the paths near them and flagged; their multipliers stay
@@ -87,7 +87,7 @@ is interpolated from the past: a lever extends the horizon to two months, fillin
 calendar-day climatology of the engine's long weather record (the trailing ten years, ±15 days, the best of 12
 variants on a walk-forward test at leads of 15 to 60 days), and covariates join it only through the same gates as
 everywhere else. The lever is built and off by default. Every night each engine is also scored lead by lead the way the forward run works, against two baselines,
-climatology and persistence. On the 10-26 run, at 1 to 7 days and at 8 to 14, all four engine versions beat both. Chronos-2 leads, at
+climatology and persistence. In late October 2026, at 1 to 7 days and at 8 to 14, all four engine versions beat both. Chronos-2 leads, at
 skill 0.31 to 0.33 against climatology and then 0.24, ahead of the covariate model at 0.14 to 0.23 and then 0.15 to
 0.18. The code records one caveat: the foundation model's test rows use realized weather at every lead, so its
 8-to-14-day score runs optimistic. With the lever on, leads of 15 to 30 and 31 to 60 days are scored the same way, so
@@ -110,7 +110,7 @@ the engines are tested against each other as the projection runs out.
 
 **What it shows.** For a chosen delivery month (eleven are built, December 2026 through October 2027), every path's
 predicted economics per MW: 118,090 rows a month, one per source, sink, time-of-use block and product. The value side
-is the month's predicted path value times the block's official hours. On this run the scenario value prices every
+is the month's predicted path value times the block's official hours. In late October 2026 the scenario value priced every
 row; the calibrated median and seasonal climatology are the fallbacks. The cost side is the expected clearing price
 times the same hours, anchored to the latest auction for 77,435 rows and to the same month a year earlier for 40,655.
 Options settle on the hourly positive part only, so the most an option can lose is its premium. Every column is the
@@ -118,9 +118,17 @@ selected month's own economics, and a set of basis columns records where each nu
 
 **The bid.** Beside each path: the bid that maximizes expected cleared profit against the modeled clearing
 distribution, with its probability of clearing; an older rule of thumb, labeled as a heuristic; and the winner's-curse
-haircut, which rides beside the bid and never changes it. Each row also carries a one-line thesis (which region's
+haircut, which rides beside the bid and never changes it. The auction is uniform-price, so the bid is a cap and the
+cost is the clearing price. The engine therefore solves `b* = argmax_b P(C ≤ b) · (V − E[C | C ≤ b])`, where V is the
+month's predicted settlement and P(clear) blends the path's own clearing history with its region-pair family's, weighted
+by how much evidence the path has (the math is in the exhibit's
+[bid section](../README.md#s09-to-s13-the-bid-as-a-decision-under-a-clearing-distribution)). A path that sinks at a
+resource node is valued under that node's settlement-deration cap, and wind and solar nodes are capped at zero
+upside. Each row also carries a one-line thesis (which region's
 congestion the path bets on, whether the month's weather helps, any warnings), how crowded the path is, the
-transmission outages on its top constraints, new supply near the sink, and a collateral estimate.
+transmission outages on its top constraints, new supply near the sink, and a collateral estimate. Three hidden-load
+labels (the sink zone's forecast for the month, its evidence score and the forecast's basis) are joined when the page
+loads; they change no dollar ([chapter 1](01-data-and-coverage.md#hidden-load)).
 
 **Sizing stays human.** Editing a row's MW recomputes predicted net times MW as you type. A fill curve measured from
 replayed auctions shows how the awarded share falls as size grows. It is informational: nothing filters or prices on
@@ -129,7 +137,7 @@ it.
 **Finding and choosing.** The grid shows either the top paths by predicted net or the best five into every node.
 "Find any path" searches all 118,090 rows, including the paths the auction package makes ineligible, labeled as such.
 Below the grid, an optimizer proposes an advisory basket under ERCOT's limit of about 2,000 transactions per auction
-and a per-sink cap (this run, 2,000 paths from 4,000 candidates), and lists the near-misses just outside it. It
+and a per-sink cap (in late October 2026, 2,000 paths from 4,000 candidates), and lists the near-misses just outside it. It
 decides nothing. The tab's own header calls the surface "a forecast, not a guarantee."
 
 ---
@@ -158,7 +166,7 @@ corridor spreads from weather, gas, outages, nuclear status and load. Two engine
 Amazon's Chronos-2 time-series foundation model (unrelated to Kronos despite the name) and the engine's own LightGBM
 quantile model on the same covariates, each in a corridor-level and a per-path version. A corridor block (8 corridors,
 peak and off-peak) is trusted only if `skill = 1 − MAE / MAE_naive ≥ 0.10` across three 14-day walk-forward folds, 42
-held-out days from mid-September to late October 2026. On this run 54 of 64 engine-corridor blocks pass. The
+held-out days from mid-September to late October 2026. In late October 2026, 54 of 64 engine-corridor blocks passed. The
 foundation model posts the best single score (0.47, on the West-North peak spread). The covariate model passes more
 blocks (31 of 32, against 23 of 32), but the gate scores it one day ahead from realized prices; scored lead by lead
 the way the forward run works, the foundation model leads (see above). The tab states its own caveat: the folds use

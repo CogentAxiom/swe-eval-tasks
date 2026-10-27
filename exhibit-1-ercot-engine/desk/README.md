@@ -1,9 +1,11 @@
 # The desk, tab by tab
 
-The engine's workbench is a desk of 36 tabs. These six chapters walk through it in the order the work runs: what the
+The engine's workbench is a desk of 37 tabs. These six chapters walk through it in the order the work runs: what the
 engine stands on, the physics of the grid, who holds what, the forecasts, the decision, and how the engine grades
-itself. Each tab gets the question it answers, what it shows, and a screenshot from the live desk after the
-2026-10-26 nightly run. The method behind the tabs is in the [exhibit README](../README.md).
+itself. Each tab gets the question it answers, what it shows, and a screenshot from the live desk in late October
+2026. The method behind the tabs is in the [exhibit README](../README.md), and three deep dives go under the desk:
+[entity resolution](entity-resolution.md), [the statistics and the gates](statistics-and-gates.md), and
+[the nightly run and its repair protocols](nightly-and-self-repair.md).
 
 ## The doctrine behind every tab
 
@@ -22,7 +24,7 @@ enforced by its contract tests. The tabs are where those rules become visible:
   volatility can pay a whole month's premium, and a monthly mean erases exactly that.
 - **Scenario algebra is linear and exact.** Region multipliers `m_r = 1 + Σ_e p_e (mult_e − 1)` and
   `value_scenario = Σ_r contrib_r · m_r`. Every live what-if re-prices through that dot product, and its residual
-  against the full recomputation is regression-checked at exactly zero (0.0 on this run).
+  against the full recomputation is regression-checked at exactly zero (0.0 in late October 2026).
 - **Weather never prices anything directly; behavior does.** Every weather-to-value signal passes through a measured
   load response, and a weather feature that cannot cite one does not ship (the exhibit's
   [weather inversion](../README.md#the-weather-inversion)).
@@ -46,7 +48,7 @@ enforced by its contract tests. The tabs are where those rules become visible:
 and scores them against data they did not see (walk-forward tests) and against what actually settled (backtests and
 replays). The original Kronos challenger, last scored in July, is the one model outside that nightly loop. Trust
 follows the scores: a component earns its place by beating a baseline and loses it on the run it stops passing, and
-an append-only ledger records every flip (6,087 so far). A drift detector watches every component's errors. Even the
+an append-only ledger records every flip (6,193 so far). A drift detector watches every component's errors. Even the
 judgment calls run on a clock: the engine counts 15 hand-set constants, and any left unchanged for three months gets
 a card asking that it be fitted from data or retired. The result is measured where it matters: in the September 2026
 replay, the model's top decile of paths realized $2.76/MWh against −$0.22 for all paths. Selection is the edge.
@@ -55,12 +57,13 @@ replay, the model's top decile of paths realized $2.76/MWh against −$0.22 for 
 
 | Chapter | Tabs |
 |---|---|
-| [1. Data and coverage](01-data-and-coverage.md) | Data Sufficiency, Node Universe, Load Register, Map, Weather, Live ERCOT |
+| [1. Data and coverage](01-data-and-coverage.md) | Data Sufficiency, Node Universe, Load Register, Hidden Load, Map, Weather, Live ERCOT |
 | [2. Grid physics](02-grid-physics.md) | Constraint Desk, Outage Watch, Dispatch Stack, Radar |
 | [3. Who holds what](03-who-holds-what.md) | Entity Map, Participants CRR, Participants QSE, Trade Explorer, P&L Explorer, Follow Trades, Forensics, and the [entity-resolution](entity-resolution.md) deep dive |
 | [4. Forecasts and scenarios](04-forecasts-and-scenarios.md) | Drivers, Scenarios, Forecast Lab, Ultra Prediction, Kronos Lab, Model Weights, Signals Research, Tail Hunter |
 | [5. The decision](05-the-decision.md) | Bid Desk, Kronos Bid Desk, Kronos II Bid Desk, Bid Desk + Signals, Bid Loader |
 | [6. Grading itself](06-grading-itself.md) | Backtest, Verification, Lookback, Feedback |
+| Deep dives | [Entity resolution](entity-resolution.md), [the statistics and the gates](statistics-and-gates.md), [the nightly run and its repair protocols](nightly-and-self-repair.md) |
 
 **What the screenshots leave out.** The desk trades a live market, so the tour shows how it works, not what it would
 buy.
@@ -68,7 +71,7 @@ buy.
 - Company names and holder codes are replaced with aliases, and DUNS numbers and CRR transaction ids are masked,
   before each capture. A capture is refused if any registered name survives.
 - Path rankings, bids and the paths themselves are pixelated wherever they would show what the desk favors.
-- Three tabs (Signals Research, Tail Hunter, Feedback) are described without a screenshot, and two more are not shown
-  at all, because they carry the desk's edge.
+- Four tabs (Hidden Load, Signals Research, Tail Hunter, Feedback) are described without a screenshot, and two more
+  are not shown at all, because they carry the desk's edge.
 - Seven desk labels that are being corrected were edited out of the screenshots (three in chapter 3, three in
   chapter 5, one in chapter 6), large-load names in chapter 1 are aliased, and local file paths read "[local path]".

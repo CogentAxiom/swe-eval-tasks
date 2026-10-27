@@ -10,8 +10,8 @@ feature; ledger data can reach a model only as skill-conditioned flows that pass
 day-ahead disclosure and whole-book P&L stages (S64 and S66), contract tests fail the suite if a prediction stage
 reads them.
 
-Every figure on this page was read from the engine's outputs after the 2026-10-26 nightly run. The screenshots are
-from the live desk the same day. **Company names and holder codes are replaced with aliases** (`Company 001`,
+Every figure on this page was read from the engine's outputs in late October 2026. The screenshots are from the live
+desk the same day. **Company names and holder codes are replaced with aliases** (`Company 001`,
 `HOLDER_001`), and DUNS numbers and CRR transaction ids are masked, because either one re-identifies a company through
 ERCOT's public lists. The aliasing ran in the page before each capture, against every name on ERCOT's registration
 and resource lists, and a capture was refused if any name survived. Three desk labels that are being corrected were

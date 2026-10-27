@@ -1,14 +1,14 @@
 # The desk, chapter 1: Data and coverage
 
 Before the engine prices a path, it has to know what it is standing on: which data arrived, which nodes exist, where
-the plants and the large new loads are, and what the grid and the weather are doing right now. These six tabs are
-that layer. Two rules run through all of them. The engine always runs, and the desk says which inputs are missing
+the plants and the large new loads are, and what the grid and the weather are doing right now. These seven tabs
+are that layer. Two rules run through all of them. The engine always runs, and the desk says which inputs are missing
 and what each gap limits. And the display never limits the model: a filter on screen never removes a node from what
 the engine prices. Both come from the engine's decision log: fail loud, label, never drop. Every row says where it
 came from, and every assumption is a labeled column rather than a buried constant.
 
-Figures and screenshots are from the live desk after the 2026-10-26 nightly run. The desk's header carries research
-dials that stay private, so every screenshot starts below the tab strip. Large-load names are replaced with aliases.
+Figures and screenshots are from the live desk in late October 2026. The desk's header carries research dials that
+stay private, so every screenshot starts below the tab strip. Large-load names are replaced with aliases.
 
 ---
 
@@ -66,8 +66,73 @@ confidential, so the list is built from public news and the register flags every
 
 **The gate before anything earns weight.** The second grid checks each energized load against the market: did the
 day-ahead basis at neighboring settlement points shift after it came on? No load signal feeds a model until that
-shift is real and not already priced. Today the register is data only, and a contract test keeps it out of every
-prediction stage.
+shift is real and not already priced. Today the register is data only: a contract test keeps it out of every pricing
+stage, and the hidden-load forecaster below may read it only as labeled context, behind a lever that is off by default.
+
+---
+
+## Hidden Load
+
+**The question:** how much load has appeared on the grid that last year's history cannot see, where is it, and what
+is scheduled to arrive?
+
+**Why it matters.** The engine's values are fitted on past flows. A data center or a crypto mine plugged in since
+then congests the area it draws from, and the history has never seen it. ERCOT's own large-load data is aggregate and
+confidential, so the engine measures new load from public data, forecasts it, and states how good that forecast has
+been.
+
+**How it is measured (S70a).** Three registers:
+- **New substations and buses** in each edition of ERCOT's settlement-point mapping, classed load-like,
+  generation-like or rename: 242 entries across four editions since July, 48 of them load-like.
+- **Registered load resources.** The floor of registered capability by load zone, read from 550 daily files of ERCOT's
+  60-day day-ahead disclosure (October 2022 to August 2026). It is counted at capability, so what remains hidden is a
+  lower bound. A year-over-year change that would straddle ERCOT's real-time co-optimization cutover (December 2025)
+  is withheld and labeled rather than computed across the break.
+- **Zonal residuals.** Hourly load by weather zone against the same month a year earlier, after weather and calendar
+  are removed. Four signals score each zone from 0 to 4:
+  - weather-normalized growth;
+  - growth that persists at 1 to 5 a.m. (a flat, round-the-clock shape);
+  - load that drops when real-time prices pass about $50 and $88 (curtailment);
+  - load that drops on the summer peak hours that set transmission charges.
+
+  Each signal carries a z-score and a placebo check. Night and afternoon growth rising together with no price response
+  is a data-center shape; curtailment at high prices is a crypto shape.
+
+**Where new load is going (S70c).** A locator reads public sources every night:
+- ERCOT's transmission project editions;
+- its settlement-point mapping;
+- state utility-commission dockets;
+- state tax-abatement records;
+- ERCOT's committee and market-notice pages.
+
+It re-confirms every tracked load, flags date slips as editions change (two projects slipped 151 and 242 days in
+October), and finds candidates on its own (43 so far). Personal details are scrubbed from every evidence snippet, and
+snippets never reach the shared view.
+
+**The forecast (S70b).** For the current month and twelve delivery months, by weather zone, load zone and the whole
+system: P10, P50 and P90 MW.
+- At each origin, a damped-trend method is chosen by nested walk-forward selection on errors that were knowable then.
+- ERCOT's Batch Zero large-load cohorts enter as hard totals: the first quarter of 2027 has 6 loads and 1,959 MW, the
+  second quarter 17 loads and 6,874 MW. They are weighted by the probability of clearing ERCOT's verification and
+  spread by a slip kernel and a ramp.
+- Loads named in public filings carry their own zone and month; the rest are spread by ERCOT's base-load shares.
+- The Batch Zero term grows from about 38 MW in January 2027 to about 6.1 GW by October 2027.
+
+**Is it any good?** The forecast earns its flag only if its walk-forward error beats both "no hidden load" and "the
+same growth as last year" on the same past cells. It does: a mean absolute error of 267 MW, against 298 MW for
+persistence and 312 MW for zero, over 1,296 scored cells. Every past origin sees only data dated before its bid-close
+day, and a test that changes the data after an origin proves nothing moves.
+
+**What it may do.** Every place it could enter value has its own lever, off by default:
+- the scenario overlay and bid economics;
+- the forward price surface;
+- the dispatch forecast's load;
+- the corridor forecasters' covariates;
+- the reasons on the Ultra rank.
+
+On the Bid Desk and in Trade Explorer it rides as labels.
+
+No screenshot: the tab is new, and its located loads carry company names.
 
 ---
 

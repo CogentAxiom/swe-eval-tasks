@@ -7,7 +7,7 @@ Where the desk can be wrong, it says so on screen. The engine ranks its own evid
 settlement) beats falsification, which beats invariants, which beat the engine re-deriving its own numbers, which
 does not count as verification. Every number on these tabs carries the rung it earned.
 
-Figures and screenshots are from the live desk after the 2026-10-26 nightly run. One desk label that is being
+Figures and screenshots are from the live desk in late October 2026. One desk label that is being
 corrected was edited out of the Backtest screenshot.
 
 ---
@@ -54,11 +54,12 @@ rank correlation 0.57 and a 30% top-decile hit rate. Buying every option loses m
 pay through a few large hits, not per-path accuracy. In the same replay, the profit-maximizing bid beat the rule of
 thumb, which the tab reads as one auction's verdict.
 
-**The governor.** Every component's walk-forward error stream runs through a changepoint detector (CUSUM): 24 streams
-watched, 23 open cards. A single spike that reverts is an outlier and goes to the tail layer only; a shift that holds
-for three windows is a regime break and becomes a card with its evidence, a proposed action and its blast radius
+**The governor.** Every component's walk-forward error stream runs through a changepoint detector (CUSUM, reference
+value 0.5σ, decision limit 4σ, detection from 8 observations): 24 streams watched, 23 open cards. A single spike of
+|z| ≥ 3 that reverts is an outlier and goes to the tail layer only; a shift that holds for three windows is a regime
+break and becomes a card with its evidence, a proposed action and its blast radius
 (which parts of the model consume it). Cards come in three tiers: tier a notifies, tier b applies itself after a veto
-window, and tier c waits for a person. Two examples from this run:
+window, and tier c waits for a person. Two examples from late October 2026:
 - **The unexplained share is rising.** The share of residual the model cannot attribute shifted up for three windows.
   The proposed action: route what is new through feature search and news tagging rather than re-weighting the
   model. Tier c.
@@ -68,7 +69,7 @@ window, and tier c waits for a person. Two examples from this run:
 **The lever gate.** A bounded setting changes on its own only after it beats the incumbent on every replayed auction:
 selected on all but the latest month, then confirmed on that untouched month. It has changed settings three times
 since July, each logged with its receipt (the holdout step was added on 17 July, after the first). Every trust flip in the engine goes into an append-only promotions ledger:
-113 items hold trust today, from 6,087 logged promotions and demotions.
+More than 100 items hold trust, from 6,193 logged promotions and demotions.
 
 **Also on the tab.** Universe reconciliation (does each path still exist next month: removed nodes, newborns,
 renames), with a re-inspection queue of 4,341 removed paths that something live still references.

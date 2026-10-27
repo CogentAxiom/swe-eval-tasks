@@ -7,10 +7,13 @@ tabs are that layer. It is the engine's founding doctrine: model nodes and const
 derive every path from them through the path-value identity. The shift factors in that identity come from a DC power
 flow on ERCOT's own auction network model, and a month's model may price nothing until the solver reproduces ERCOT's
 published auction results at R² ≥ 0.99 in every time-of-use block (0.99999 or better on the October 2026 auction).
+The solve runs contingency by contingency, and every family a month serves is re-checked against ERCOT's newest posted
+day-ahead and real-time shift factors; the gates are in the exhibit's
+[S07h section](../README.md#s07h-exact-shift-factors-on-ercots-own-auction-model-month-by-month).
 The physics behind these tabs (the geolocation of nodes, the DC power flow and shift factors, the outage pipelines)
 is in the exhibit's [under-the-hood section](../README.md#under-the-hood-solvers-pipelines-and-invariants).
 
-Figures and screenshots are from the live desk after the 2026-10-26 nightly run. Every screenshot starts below the
+Figures and screenshots are from the live desk in late October 2026. Every screenshot starts below the
 tab strip, because the header carries research dials that stay private.
 
 ---
@@ -41,7 +44,9 @@ over these families, not over the 1.2 million possible node pairs.
 **The question:** which transmission outages hit the constraints the paths depend on, in each forward month?
 
 **What it shows.** ERCOT's outage register as of its latest posting (85,142 outages, with 114,744 dated states kept
-since 11 October), joined to constraint families. For November 2026: 823 families with a mapped line or transformer
+since 11 October), joined to constraint families. ERCOT keeps under four days of hourly postings online, so the engine
+captures every posting into an append-only history; the register can be rebuilt as it stood at any moment since
+capture began, which is what an as-of test of an outage signal needs. For November 2026: 823 families with a mapped line or transformer
 outage, from 2,712 family-outage links. Each link is classed:
 - **Class i:** the family's own monitored element is out. Measured from June to October 2026, a family binds 0.34
   times as often and moves 0.19 times the shadow-price dollars while its own element is out.
@@ -68,7 +73,7 @@ outage-level detail stays on the desk.
 - **The forecast.** Seven days of net load (ERCOT's load forecast minus its wind and solar forecasts), with nuclear
   taken live from the reactor feed and batteries shaving the top net-load hours. What remains walks the merit order:
   the peak hour each day, the marginal fuel and cost, battery charge and discharge, and the hours with less than
-  10 GW of headroom after active thermal outages (10,105 MW netted out on this run).
+  10 GW of headroom after active thermal outages (10,105 MW netted out in late October 2026).
 - **Below the screenshot:** the merit order itself (every plant, cheapest first, with each region's cumulative MW),
   delivered coal cost (the train often costs more than the coal) and each plant's maintenance-prone months.
 

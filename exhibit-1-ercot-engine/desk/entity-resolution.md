@@ -3,8 +3,8 @@
 A CRR award names its holder by an account code. To know who holds what (a generator hedging its own plant, a
 retailer hedging its load, a fund with no physical position at all) the engine has to turn that code into a company,
 find the company's other roles in the market, and connect it to physical assets on the grid. This is the layer behind
-[chapter 3](03-who-holds-what.md) of the desk. Figures are from the 2026-10-25 registry build and the 2026-10-26
-nightly run.
+[chapter 3](03-who-holds-what.md) of the desk. Figures are from the 2026-10-25 registry build and the engine's
+outputs in late October 2026.
 
 ```mermaid
 flowchart LR

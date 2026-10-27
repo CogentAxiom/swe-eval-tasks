@@ -10,7 +10,7 @@ person's conjecture enters only signed and bannered in red. The method behind th
 earns its way in, the three-tier promotion rules) is in the exhibit's
 [macro-to-micro section](../README.md#macro-to-micro-how-a-covariate-earns-its-way-in).
 
-Figures and screenshots are from the live desk after the 2026-10-26 nightly run. This chapter shows how the forecasts
+Figures and screenshots are from the live desk in late October 2026. This chapter shows how the forecasts
 are built and governed, not what they say: path rankings are pixelated, and the private research dials stay out of
 frame.
 
@@ -71,6 +71,11 @@ capacity) are labeled illustrative, not fitted.
 **What comes out.** The paths priced and with positive value, the change against the baseline, where the scenario
 lands by region, every path's base value against its scenario value, and the paths that climb the ranking
 (pixelated here).
+
+**Hidden load, beside the knobs.** For the month picked, a panel shows the hidden-load forecast by load zone and for
+the system (P10, P50 and P90 MW above the same month a year earlier), the zone's evidence score, and how much of it is
+ERCOT's Batch Zero large loads. It is view-only: no knob moves it, and it reaches path values only through its own
+lever, off by default ([chapter 1](01-data-and-coverage.md#hidden-load)).
 
 **Promotion is explicit.** Moving a knob never changes the desks. A person has to promote the knobs to a live
 scenario, and then every bid surface shows a red banner naming the scenarios in force until someone disables them.

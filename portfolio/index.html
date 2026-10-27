@@ -114,8 +114,8 @@ a.cta{display:inline-block;font-weight:700;background:var(--accent);color:var(--
 
 <section aria-labelledby="engine">
   <h2 id="engine">The ERCOT engine: the full system</h2>
-  <p>A system I architected, built with Claude, and run every night: a research and bid-decision engine for ERCOT's Congestion Revenue Rights auctions. 113 pipeline stages and about 110,000 lines of Python, rebuilt unattended at 03:30: the pipeline, then 1,348 tests, then a desk restart. It prices, ranks and evidences every path in every auction. It never places a trade. Tasks 02 and 03 are modeled on two problems it solved, marked below.</p>
-  <p><a class="cta" href="engine.html">See the engine →</a> Every power source mapped to its node; the SaaS errors it corrected and the tie-out to ERCOT; the weather inversion; how a covariate like El Niño earns its way in through statistical gates; a scenario lab for any catastrophe; the solvers under the hood; and last night's run, stage by stage. All drawn from the engine's own artifacts.</p>
+  <p>A system I architected, built with Claude, and run every night: a research and bid-decision engine for ERCOT's Congestion Revenue Rights auctions. 117 pipeline stages and about 134,000 lines of Python, rebuilt unattended at 03:30: the pipeline, then 1,879 tests, then a desk restart. It prices, ranks and evidences every path in every auction. It never places a trade. Tasks 02 and 03 are modeled on two problems it solved, marked below.</p>
+  <p><a class="cta" href="engine.html">See the engine →</a> Every power source mapped to its node; the SaaS errors it corrected and the tie-out to ERCOT; the weather inversion; how a covariate like El Niño earns its way in through statistical gates; a scenario lab for any catastrophe; the solvers under the hood; and the nightly run with its repair protocols. All drawn from the engine's own artifacts.</p>
   <div class="findings">
     <div class="finding">
       <span class="label">Settlement truth</span>
@@ -134,7 +134,7 @@ a.cta{display:inline-block;font-weight:700;background:var(--accent);color:var(--
     </div>
   </div>
   <ul class="plain">
-    <li><strong>Built with AI agents:</strong> Claude Fable 5 began the build with me on 2 July 2026 and is the co-author on 153 of its 320 commits; Opus on 137. I set the architecture, the contracts and the evidence rules, and I check what ships.</li>
+    <li><strong>Built with AI agents:</strong> The build began on 2 July 2026 with Claude Code coding agents. I set the architecture, the contracts and the evidence rules, and I check what ships.</li>
     <li><strong>Seven binding contracts</strong>, several written because an earlier agent silently broke what they protect: model nodes and constraints, never pairs; options from the hourly positive part, never monthly means; no assumed auction discount; challengers never overwrite the baseline; informational columns never filter; weather only as a scenario mixture; one-offs become scenarios, never weights.</li>
     <li><strong>Governance for AI-built software:</strong> evidence promotes, humans check. Statistical gates promote automatically; humans veto, revert, and alone submit bids. A dated decision log every agent session must read; evidence ranked from external oracle down to same-author re-derivation, which the engine calls "not verification".</li>
     <li><strong>Bugs caught by validating, now permanent guards:</strong> a missing minus sign that inverted every path; month names sorting alphabetically and pinning the engine to May; leading spaces in the operator's archive prices that silently zeroed option payouts; a missing day hidden under "32/32 COMPLETE" for four months.</li>
