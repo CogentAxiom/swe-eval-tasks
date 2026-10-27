@@ -19,7 +19,7 @@ estimator, test and promotion gate, with its parameters) and [the nightly run an
 
 | | |
 |---|---|
-| Code | 117 pipeline stages; about 134,000 lines of tracked Python: 96,000 engine and tooling, 38,000 tests, excluding 27,000 lines of vendored reference code; 320 commits since 2 July 2026 |
+| Code | 117 pipeline stages; about 134,000 lines of tracked Python: 96,000 engine and tooling, 38,000 tests, excluding 27,000 lines of vendored reference code; 325 commits since 2 July 2026 |
 | Tests | 1,617 test functions in 132 files (1,879 test cases with parametrization), including contract tests that bind claimed capabilities to on-disk artifacts; the full suite runs every night |
 | Nightly | 03:30 daily: the full pipeline, every stage in its own process under an OS lock, then the full test suite, then a restart of the trading desk; a 07:00 watchdog checks it. Every artifact is held to a 24-hour freshness guarantee, and every forecast and decision file is archived content-addressed, so any night can be rebuilt as it was ([deep dive](desk/nightly-and-self-repair.md)) |
 | Desk | a Dash workbench of 37 tabs (Bid Desk, Constraint Desk, Node Universe, Weather, Forecast Lab, Hidden Load, Verification, Trade Explorer, Model Weights, Data Sufficiency, ...) |
