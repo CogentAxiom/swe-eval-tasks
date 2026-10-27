@@ -9,7 +9,7 @@ I am its sole architect. Claude Fable 5 began the build with me on 2 July 2026; 
 trailers), Fable 5 is the co-author on 153 of its 320 commits and Opus on 137 (Opus 4.8 on 120, Opus 5.5 on 17). It
 runs unattended every night. Every number below was checked against the repository and its artifacts after the
 2026-10-19 nightly run, and each names where it comes from. The portfolio's engine page (`portfolio/engine.html`)
-draws the same material as charts. The source is private: it trades a live market, and its participant layer is
+draws the same material as charts. The source is private: it trades a live market, and aspects of the project are
 proprietary. Nothing here is code.
 
 ## At a glance
