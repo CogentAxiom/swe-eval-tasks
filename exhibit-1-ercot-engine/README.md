@@ -12,6 +12,9 @@ runs unattended every night. Every number below was checked against the reposito
 draws the same material as charts. The source is private: it trades a live market, and aspects of the project are
 proprietary. Nothing here is code.
 
+**Tour the desk:** [six chapters](desk/README.md) walk through the trading desk tab by tab, with screenshots from the
+live desk.
+
 ## At a glance
 
 | | |
