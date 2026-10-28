@@ -18,7 +18,7 @@ def codebook_md(codebook) -> str:
     """Every top-level section of the codebook, rendered; nothing is left out."""
     cb = codebook.data
     L = [f"# {cb['name']}", "",
-         f"Version `{cb['version']}`, frozen {cb['frozen']}. sha256 `{codebook.sha256}`."
+         f"Version `{cb['version']}`. sha256 `{codebook.sha256}`."
          + (f" Author: {cb['author']}." if cb.get("author") else ""),
          "Generated from `codebook.json` by `python -m auditkit codebook render`. Do not edit by hand.", ""]
     if cb.get("precedence"):
@@ -35,8 +35,6 @@ def codebook_md(codebook) -> str:
             extra.append(f"Counting: {c['counting']}")
         if c.get("notes"):
             extra.append(c["notes"])
-        if c.get("renamed_from"):
-            extra.append("Renamed from " + ", ".join(f"`{r}`" for r in c["renamed_from"]) + ".")
         L.append(f"| `{slug}` | {_cell(c['definition'])} | {_cell(c['convicting_test'])} | {_cell(c['excludes'])} | {_cell(' '.join(extra))} |")
     L += ["", "## Drivers (one per entry; behavioral only)", "", "| Driver | Meaning |", "|---|---|"]
     L += [f"| `{k}` | {_cell(v['meaning'])} |" for k, v in cb["drivers"].items()]
@@ -109,11 +107,6 @@ def codebook_md(codebook) -> str:
         L += ["", "## Sample scope", ""] + [f"{i}. {r}" for i, r in enumerate(cb["sample_scope"], 1)]
     if cb.get("instrument_doctrine"):
         L += ["", "## Instrument doctrine", ""] + [f"- {r}" for r in cb["instrument_doctrine"]]
-    if cb.get("retired"):
-        L += ["", "## Retired names", "", "| From | To | Why |", "|---|---|---|"]
-        L += [f"| `{r['from']}` | `{r.get('to') or '(retired)'}` | {_cell(r['why'])} |" for r in cb["retired"]]
-    L += ["", "## Amendments", "", "| Date | Change | Basis |", "|---|---|---|"]
-    L += [f"| {a['date']} | {_cell(a['change'])} | {_cell(a['basis'])} |" for a in cb["amendments"]]
     return "\n".join(L) + "\n"
 
 

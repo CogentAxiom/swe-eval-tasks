@@ -1,11 +1,10 @@
-"""The frozen codebook: classes, drivers, tags, protections, severity, gates.
+"""The codebook: classes, drivers, tags, protections, severity, gates.
 
 The codebook is data (``codebook/codebook.json``). It is pinned by the sha256 of
 its canonical form, recorded in ``codebook/PIN``. Loading a codebook whose hash
 does not match its pin is refused, and so is loading one with no pin at all — a
-missing pin would skip the freeze check, so the check would pass vacuously: the
-codebook was frozen before coding, and any change is a dated amendment that
-declares a new version and a new pin (gate G8).
+missing pin would skip the pin check, so the check would pass vacuously. Any
+change to the codebook declares a new version and a new pin (gate G8).
 The human-readable ``CODEBOOK.md`` is generated from the JSON, never edited by hand.
 """
 from __future__ import annotations
@@ -16,9 +15,9 @@ from dataclasses import dataclass
 from pathlib import Path
 from typing import Any
 
-REQUIRED_TOP = ("name", "version", "frozen", "norm", "preconditions", "classes", "drivers", "tags",
+REQUIRED_TOP = ("name", "version", "norm", "preconditions", "classes", "drivers", "tags",
                 "protections", "severity", "evidence_gates", "mechanical_gates", "counting_rules",
-                "tiebreaks", "amendments")
+                "tiebreaks")
 REQUIRED_CLASS = ("name", "definition", "convicting_test", "excludes", "act_class")
 
 
@@ -98,7 +97,7 @@ def load(path: str | Path, pin_path: str | Path | None = None) -> Codebook:
     if not pin_path.exists():
         raise CodebookError(
             f"no pin for this codebook ({pin_path} missing): a missing pin would skip the "
-            "freeze check (G8). Pin it with: python -m auditkit codebook pin"
+            "pin check (G8). Pin it with: python -m auditkit codebook pin"
         )
     pinned = pin_path.read_text(encoding="utf-8").split()[0]
     if pinned != sha:

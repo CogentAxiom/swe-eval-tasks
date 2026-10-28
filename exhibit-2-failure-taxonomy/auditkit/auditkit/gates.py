@@ -158,7 +158,7 @@ def type_gate(entries: Iterable[Entry]) -> GateResult:
 
 
 def codebook_gate(entries: Iterable[Entry], codebook) -> GateResult:
-    """Class, driver and tags are drawn from the frozen codebook; the severity vector parses and
+    """Class, driver and tags are drawn from the pinned codebook; the severity vector parses and
     respects every cap its tags declare (``cap`` in the tag's definition).
 
     Tags may also match a declared pattern (``tag_patterns`` in the codebook, e.g.

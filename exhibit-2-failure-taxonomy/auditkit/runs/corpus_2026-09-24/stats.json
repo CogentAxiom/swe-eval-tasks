@@ -5,7 +5,7 @@
     "inputs": {
       "corpus": {
         "path": "MERGED_V12.json",
-        "sha256": "47b7ffcea6f84493daccb4f5b7d66e85e3b6aadddb78663aa10ad50506a685b4"
+        "sha256": "ae1c00f7cb37038be896ff92165d6e766c1826b611660fe09509b9b7fbd5c1a2"
       },
       "conversations": {
         "path": "convs",
@@ -14,7 +14,7 @@
     },
     "codebook": {
       "version": "2026-10-28.1",
-      "sha256": "2f697cb00a1567a12af160ae34b96af8c6192123519560cc0963bbc2bd5e0b34"
+      "sha256": "6287469b0f508f7da605ef893a69a4695691eaa67a265462b09de0d750e3de6a"
     }
   },
   "corpus": {
