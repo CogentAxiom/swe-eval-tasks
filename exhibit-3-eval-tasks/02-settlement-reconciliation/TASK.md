@@ -71,7 +71,7 @@ Debugging from symptoms in a data system, against an authoritative rulebook:
 ## Where the realism comes from
 
 I built and run a production research platform for a real power market. It rebuilds a
-6.27-million-transaction ledger from primary files. Before it had API access to the operator's
+6.37-million-transaction ledger from primary files. Before it had API access to the operator's
 settlement data, it worked from a commercial vendor's P&L extract, a subscription product sold as
 SaaS, and that extract did not tie to the statements of a government-regulated market operator. It
 booked $416 million of P&L to holders who had already sold, and its settlement hours were wrong in
