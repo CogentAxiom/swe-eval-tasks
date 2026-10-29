@@ -99,8 +99,8 @@ rows S1c, S31, S51, S52.
 ## Macro to micro: how a covariate earns its way in
 
 Weather reaches a congestion price through a chain: macro states months ahead (climate indices and ocean temperatures)
-size the tails; sub-seasonal drivers own outbreak timing one to three weeks out; the live
-forecast triggers; measured behavior converts weather into load; the constraint space prices it.
+size the tails; sub-seasonal drivers own outbreak timing one to three weeks out; the live 1-to-14-day forecast
+(WeatherNext 3) triggers; measured behavior converts weather into load; the constraint space prices it.
 
 - **Testing covariates.** The macro scan crossed eight drivers (ONI, Niño 3.4, SOI, AO, NAO, PNA, PDO, AMO) with four
   regions, twelve months, the mean and variance of temperature, and leads of two to four months over 75 years: 2,304
@@ -114,6 +114,21 @@ forecast triggers; measured behavior converts weather into load; the constraint 
   temperatures with each path's own endpoint stations and differentials lifted LightGBM from 12 to 14 trusted corridor
   blocks of 16 (mean skill 0.161 to 0.266) and Chronos-2 from 10 to 13, under a gate of 10% skill over seasonal-naive on
   a three-fold, 14-day walk-forward. The sub-seasonal outbreak model clears no region's gate and stays advisory.
+- **The 1-to-14-day start point earned its slot.** Google DeepMind's 64-member WeatherNext 3 ensemble replaced the
+  previous forecast as the engine's default on 27 October 2026, after a 73-run backtest (every 14th day, January 2024 to
+  October 2026, 90% paired-bootstrap intervals). The test was set up to favor the incumbent: the previous forecast was
+  scored from issues 12 to 21 hours later than the nightly could have had, and WeatherNext counted as better only when
+  it beat those.
+  - Against six airport thermometers, its temperature error was 0.81 to 1.27 °F lower on days 2 to 7, with every
+    interval clear of zero; day 1 was a tie.
+  - Against the engine's own weather record, which its models train on, the error was 0.85 to 1.52 °F lower on days 1
+    to 7.
+  - In winter, the season that sets freeze tails, the airport error over days 1 to 7 fell from 4.78 to 3.30 °F.
+  - It beat climatology at every lead tested, days 1 to 7, 10 and 14: by 4.0 °F on day 1, 1.6 °F on day 10 and 0.5 °F on
+    day 14.
+  - Days 8 to 14, which used to fall back to climatology, now carry a real forecast into the corridor forecasters.
+  - If the feed is missing or stale on any night, the engine falls back to the previous forecast, labeled, under a
+    red banner.
 - **Promotion rules: evidence promotes, humans check.** Bid submission stays human, always; promotion belongs to the
   evidence gate. Tier 1, bounded reversible reweights: automatic, a card notifies. Tier 2, component swaps under strong
   gates: automatic after a visible veto window. Tier 3, thin-sample gates or history-rewriting changes: a human check is
@@ -232,7 +247,7 @@ interior solve       L_II * x_I = -L_IB * x_B
   prefix.
 
 Verbatim excerpt, `engine/stacks/s06_geo_interpolation.py` lines 124-139 (indentation removed). Every line is unchanged
-since commit 234346e on 2 July 2026, the build's first day: author Jonathan Hurst, co-author Claude Opus 4.8.
+since commit 234346e on 2 July 2026, the build's first day: author Jonathan Hurst.
 
 ```python
 A = csc_matrix((vals, (rows, cols)), shape=(n, n))
@@ -378,7 +393,7 @@ edge = premium OPT(P->Q) - [ clearing OBL(P->Q) + premium OPT(Q->P) ]  =  0   wi
   auction mixed in, hedge types crossed, units broken), never a trading opportunity.
 
 Verbatim excerpt, `tests/test_s12b_parity.py` lines 44-49, inside `test_within_auction_no_arbitrage_receipt()`
-(indentation removed). Unchanged since commit 91707e1 on 9 July 2026: author Jonathan Hurst, co-author Claude Opus 4.8.
+(indentation removed). Unchanged since commit 91707e1 on 9 July 2026: author Jonathan Hurst.
 It runs in the nightly suite.
 
 ```python

@@ -14,6 +14,14 @@ def _cell(s: str) -> str:
     return (s or "").replace("|", "\\|").replace("\n", " ")
 
 
+def _terms(s: str, slugs) -> str:
+    """Set every codebook name in a prose passage in code font, as the tables do."""
+    import re
+    for slug in sorted(slugs, key=len, reverse=True):
+        s = re.sub(r"(?<![`\w-])" + re.escape(slug) + r"(?![`\w-])", f"`{slug}`", s, flags=re.I)
+    return s
+
+
 def codebook_md(codebook) -> str:
     """Every top-level section of the codebook, rendered; nothing is left out."""
     cb = codebook.data
@@ -46,12 +54,13 @@ def codebook_md(codebook) -> str:
     L += [f"| {v.get('name', k)} | {_cell(v['excludes'])} | {_cell(v.get('test', ''))} |" for k, v in cb["protections"].items()]
     st = cb.get("sycophancy_test")
     if st:
-        L += ["", "## The sycophancy test", "", f"{st['type']} {st['definition']}", "", "Both conditions required:", ""]
+        names = [*cb["classes"], *cb["drivers"], *cb["tags"], *cb["protections"]]
+        L += ["", "## The sycophancy test", "", _terms(f"{st['type']} {st['definition']}", names), "", "Both conditions required:", ""]
         L += [f"{i}. {x}" for i, x in enumerate(st.get("conditions", []), 1)]
         if st.get("aggravated"):
-            L += ["", f"**Aggravated:** {st['aggravated']}"]
+            L += ["", f"**Aggravated:** {_terms(st['aggravated'], names)}"]
         if st.get("never"):
-            L += ["", "**Never:**", ""] + [f"- {x}" for x in st["never"]]
+            L += ["", "**Never:**", ""] + [f"- {_terms(x, names)}" for x in st["never"]]
     if cb.get("transmission_rule"):
         L += ["", "## The transmission rule", ""] + [f"{i}. {r}" for i, r in enumerate(cb["transmission_rule"], 1)]
     L += ["", "## Severity (applied last; reported as a vector, never multiplied into a count)", "",
