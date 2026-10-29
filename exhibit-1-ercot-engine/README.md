@@ -116,7 +116,8 @@ size the tails; sub-seasonal drivers own outbreak timing one to three weeks out;
   a three-fold, 14-day walk-forward. The sub-seasonal outbreak model clears no region's gate and stays advisory.
 - **The 1-to-14-day start point earned its slot.** Google DeepMind's 64-member WeatherNext 3 ensemble replaced the
   previous forecast as the engine's default on 27 October 2026, after a 73-run backtest (every 14th day, January 2024 to
-  October 2026, 90% paired-bootstrap intervals). The test was set up to favor the incumbent: the previous forecast was
+  October 2026, 90% paired-bootstrap intervals). The backtest ran before anything in the live engine changed, and
+  WeatherNext became the default on its result. The test was set up to favor the incumbent: the previous forecast was
   scored from issues 12 to 21 hours later than the nightly could have had, and WeatherNext counted as better only when
   it beat those.
   - Against six airport thermometers, its temperature error was 0.81 to 1.27 °F lower on days 2 to 7, with every
