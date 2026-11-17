@@ -5,7 +5,7 @@ GitHub Pages:
 
 | Page | Open it rendered |
 |---|---|
-| Front page: a summary of all three exhibits (`index.html`) | [cogentaxiom.github.io/swe-eval-tasks/portfolio/](https://cogentaxiom.github.io/swe-eval-tasks/portfolio/) |
+| Front page: the repository's README, rendered (`index.html`) | [cogentaxiom.github.io/swe-eval-tasks/portfolio/](https://cogentaxiom.github.io/swe-eval-tasks/portfolio/) |
 | Exhibit 1: the ERCOT engine (`engine.html`) | [engine.html](https://cogentaxiom.github.io/swe-eval-tasks/portfolio/engine.html) |
 | Exhibit 2: the Audit Rubric (`audit-rubric.html`) | [audit-rubric.html](https://cogentaxiom.github.io/swe-eval-tasks/portfolio/audit-rubric.html) |
 | Exhibit 2: Where an Error Goes, the decision tree and every definition (`decision-tree.html`) | [decision-tree.html](https://cogentaxiom.github.io/swe-eval-tasks/portfolio/decision-tree.html) |
@@ -19,4 +19,4 @@ Exhibit 3, the eval tasks, has no page of its own. Its write-ups are Markdown an
   [`build_tree_page.py`](../exhibit-2-failure-taxonomy/auditkit/tools/build_tree_page.py), so every number on them
   comes from a build.
 - **Engine page:** generated from the engine's own artifacts.
-- **Front page:** written by hand.
+- **Front page:** generated from the root [`README.md`](../README.md), so it says what the README says.
