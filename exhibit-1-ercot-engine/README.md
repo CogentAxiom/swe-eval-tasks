@@ -5,7 +5,7 @@ auctions. It ingests the market, models congestion in constraint space, prices e
 own predictions against settlement, and surfaces the evidence. **It never places a trade.** The human selects, sizes
 and submits.
 
-I am its sole architect. The build began on 2 July 2026 with Claude Code coding agents. It
+I am its sole architect. The build began in late May 2026 with ChatGPT Codex and needed a redesign: I redesigned its systems, the data layer on Parquet and DuckDB included, and handed it to Claude Code coding agents on 2 July 2026. It
 runs unattended every night. Every number below was checked against the repository and its artifacts in late October
 2026, and each names where it comes from. The portfolio's engine page (`portfolio/engine.html`) draws the same material
 as charts. The source is private: it trades a live market, and aspects of the project are
@@ -156,14 +156,14 @@ percentile, which sizes a bid, more than the mean.
 ## The weather inversion
 
 Extreme weather usually raises demand and prices. A hurricane or a deep freeze that knocks out delivery does the
-opposite, and the engine learned it from a $24.8 million receipt.
+opposite. The coding agents that built the engine, ChatGPT Codex and then Claude Fable, missed it; I caught it in my checks and directed the inversion, and Beryl's settlement, a $24.8 million receipt, is what the fix is anchored on.
 
 - **Beryl (July 2024).** The hurricane destroyed distribution into Houston: 2.7 million customers dark, load collapsed,
   congestion into Houston inverted. Houston-sink CRRs lost $24.8 million in ERCOT's settlement. North → Houston lost
   $8.74 million; the counterflow, Houston → North, made $1.27 million; the exact reverse hub pair (HB_HOUSTON →
   HB_NORTH, peak obligation, +$952k) was the single biggest winner in the Houston complex. Houston → South lost
   $0.34 million.
-- **The bug it exposed.** The old event knob applied one sign to every storm, "hurricane = congestion up". That is the
+- **The design failure.** Both coding agents gave the event knob one sign for every storm, "hurricane = congestion up". That is the
   transmission-loss storm: load intact, imports constrained. Beryl was the demand-destruction storm.
 - **The fix (July 2026).** Two independent knobs per event. A transmission and generation derate raises import
   congestion. A load haircut for distribution damage, evacuation and demand destruction lowers the zone and raises
@@ -248,7 +248,7 @@ interior solve       L_II * x_I = -L_IB * x_B
   prefix.
 
 Verbatim excerpt, `engine/stacks/s06_geo_interpolation.py` lines 124-139 (indentation removed). Every line is unchanged
-since commit 234346e on 2 July 2026, the build's first day: author Jonathan Hurst.
+since commit 234346e on 2 July 2026, the first day of the Claude Code build: author Jonathan Hurst.
 
 ```python
 A = csc_matrix((vals, (rows, cols)), shape=(n, n))
